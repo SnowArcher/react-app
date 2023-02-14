@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.wrapper {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    box-sizing: border-box;
+    width: 75vw;
+    margin: 2.2vw auto;
+}
+.main-title {
+    width: 30vw;
+    margin: 3.8vw auto 4.4vw auto;
+    h2 {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 47px;
+        text-align: center;
+        color: #000000;
+    }
+    p {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        color: #1F1F1F;
+    }
+}
+.cards {
+    margin: 14.6vw 0 0 ;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4.4vw 11.3vw;
+    li {
+        max-width: 232px;
+        min-height: 31.5vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        img {
+            width: 100%;
+            min-width: 100%;
+        }
+        h3 {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 23px;
+            color: #000000;
+            margin: 2vw 0 .83vw;
+        }
+        h4 {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 23px;
+            color: #000000;
+            margin: 0;
+        }
+        p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: #1F1F1F;
+            text-align: center;
+            margin: 0.83vw 0 2vw;
+        }
+    }
+    &__button {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        &_share {
+            width: 44px;
+            height: 44px;
+            border: 1px solid #1F1F1F;
+            border-radius: 44px;
+            background-color: white;
+            cursor: pointer;
+            img {
+                width: 20px;
+                height: 20px;
+                display: inline-block;
+                margin-top: .3vw;
+            }
+        }
+        &_donate {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+            color: #FFFFFF;
+            background: #1F1F1F;
+            border-radius: 44px;
+            width: 111px;
+            min-height: 44px;
+            cursor: pointer;
+        }
+        
+    }
+}
+
+
+

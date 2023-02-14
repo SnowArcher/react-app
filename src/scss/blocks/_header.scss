@@ -1,0 +1,76 @@
+.hero {
+    max-width: 1440px;
+    width: 100%;
+    max-height: calc(900 - 86) * 1px;
+    padding-left: calc(100 / 1440) * 100vw;
+    padding-right: calc(100 / 1440) * 100vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+.hero__info {
+    padding-right: calc(32 / 1440) * 100vw;
+    padding-top: 184px;
+    padding-bottom: 180px;
+    width: calc(500 / 1440) * 100vw;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    color: #000000;
+    h1 {
+        font-weight: 500;
+        font-size: 3.5em;
+        line-height: 113%;
+        margin-bottom: 40px;
+    }
+    p {
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 130%;
+        margin-bottom: 40px;
+    }
+}
+.btnDonate {
+    width: calc(391 / 1440) * 100vw;
+    height: 64px;
+    background: #FFD966;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        padding-left: calc(8 / 1440) * 100vw;
+    }
+    &:hover {
+        background-color: white;
+    }
+}
+.hero__carousel {
+    position: relative;
+}
+.images {
+    width: 558px;
+    height: 614px;
+    background-color: #FFD966;
+}
+.next_images {
+    position: absolute;
+    top: 10%;
+    left: 110%;
+    width: calc(558 / 2) * 1px;
+    height: calc(614 / 2) * 1px;
+    background-color: #FFD966;
+    overflow-x:hidden;  
+}
+.hide_images {
+    position: absolute;
+    display: none;
+    width: 558px;
+    height: 614px;
+    left: 150%;
+    top: 0%;
+    background-color: #FFD966;
+}
+.btnCarousel {
+    position: absolute;
+    bottom: 20%;
+    left: 110%;
+}

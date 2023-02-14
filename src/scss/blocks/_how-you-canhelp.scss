@@ -1,0 +1,220 @@
+.how-you-can-help {
+    max-width: 1440px;
+    width: 100%;
+    max-height: 2392px;
+    padding-left: calc(100 / 1440) * 100vw;
+    padding-right: calc(100 / 1440) * 100vw;
+    padding-top: 134px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    > h1 {
+        text-align: center;
+        font-weight: 500;
+        font-size:  2.5em;
+        line-height: 120%;
+        margin-bottom: 28px;
+        color: #000000;
+    }
+    > p {
+        padding-left: calc(445.5 / 1440) * 100vw;
+        padding-right: calc(445.5 / 1440) * 100vw;
+        text-align: center;
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 130%;
+        color: #1F1F1F;
+        margin-bottom: 64px;
+    }
+}
+.help-content {
+    width: calc(1240 / 1440) * 100vw;
+    max-height: 601px;
+    display: flex;
+    justify-content: space-between;
+}
+.help-card {
+    max-width: 498px;
+    max-height: 601px;
+    > h1 {
+        font-weight: 600;
+        font-size: 1.25em;
+        line-height: 120%;
+        color: #000000;
+        margin-bottom: 24px;
+    }
+    > p {
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 130%;
+        color: #1F1F1F;
+        margin-bottom: 16px;
+    }
+}
+.rate {
+    margin-top: 32px;
+    margin-bottom: 20px;
+    width: calc(238 / 1440) * 100vw;
+    height: 40px;
+    display: flex;
+}
+button#uah {
+    border-radius: 100px 0 0 100px;
+}
+button#eur {
+    border-radius: 0 100px 100px 0;
+}
+.rate__button {
+    width: calc(80 / 1440) * 100vw;
+    border: 1px solid #000000;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    font-size: 0.875em;
+    cursor: pointer;
+    color: #1D192B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        padding-right: calc(8 / 1440) * 100vw;
+        display: none;
+    }
+    &:hover {
+        background-color: #0275ED;
+    }
+}
+.rate__button:not(:last-child) {
+    border-right: none;
+}
+.rate__button:active {
+    background: rgba(31, 30, 27, 0.1);
+    > img {
+        display: block;
+    }
+}
+.count {
+    margin-top: 32px;
+    margin-bottom: 20px;
+    width: calc(310 / 1440) * 100vw;
+    height: 40px;
+    display: flex;
+}
+button#count1 {
+    border-radius: 100px 0 0 100px;
+}
+button#count3 {
+    border-radius: 0 100px 100px 0;
+}
+.count__button {
+    width: calc(104 / 1440) * 100vw;
+    border: 1px solid #000000;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    font-size: 0.875em;
+    cursor: pointer;
+    color: #1D192B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        padding-right: calc(8 / 1440) * 100vw;
+        display: none;
+    }
+    &:hover {
+        background-color: #0275ED;
+    }
+}
+.count__button:not(:last-child) {
+    border-right: none;
+}
+.count__button:active {
+    background: rgba(31, 30, 27, 0.1);
+    > img {
+        display: block;
+    }
+}
+.donate-form {
+    > input {
+        width: calc(498 / 1440) * 100vw;
+        height: 56px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 130%;
+        color: #333333;
+        border-radius: 4px 4px 0px 0px;
+        padding: 17.5px calc(16 / 1440) * 100vw;
+        background: rgba(255, 255, 255, 0.43);
+        border-bottom: 1px solid #333333;
+        &:hover {
+            background-color: #FFD966;
+            border-bottom: 1px solid #0275ED;
+        }
+    }
+    sup {
+        width: calc(498 / 1440) * 100vw;
+        height: 20px;
+        padding: 4px (calc(16 / 1440) * 100vw) 0px;
+    }
+    .btn-credit-card {
+        margin-top: 28px;
+        width: calc(498 / 1440) * 100vw;
+        height: 53px;
+        background: #0275ED;
+        font-weight: 500;
+        font-size: 1em;
+        line-height: 120%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span {
+            color: #FFFFFF;
+        }
+        img {
+            padding-left: calc(8 / 1440) * 100vw;
+        }
+        &:hover {
+            background-color: red;
+        }
+    }
+    .btn-pay-pal {
+        margin-top: 28px;
+        margin-bottom: 104px;
+        width: calc(498 / 1440) * 100vw;
+        height: 53px;
+        background: #FFD966;
+        font-weight: 500;
+        font-size: 1em;
+        line-height: 120%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span {
+            color: #000000;
+        }
+        img {
+            padding-left: calc(8 / 1440) * 100vw;
+        }
+        &:hover {
+            background-color: red;
+        }
+    }
+} 
+.help-photo {
+    > img {
+        max-width: 599px;
+        max-height: 601px;
+    }
+}
