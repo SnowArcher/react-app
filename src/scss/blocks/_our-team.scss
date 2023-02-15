@@ -1,16 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
 
 .team {
-    width: 75vw;
-    margin: 3.3vw auto 3.5vw auto;
-    font-family: 'Roboto', sans-serif;
+    width: 86vw;
+    margin: 2.8vw auto 3.5vw auto;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
+
     h2{
 
         font-weight: 700;
         font-size: 40px;
         line-height: 47px;
         color: #000000;
+        text-align: center;
         margin: 0;
         padding: 0;
     }
@@ -24,7 +28,7 @@
     &__card {
         width: 50vw;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         margin: 3.1vw 0;
         img {
             width: 230px;

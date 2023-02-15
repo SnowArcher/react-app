@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 * {
@@ -1187,9 +1188,9 @@ button#count3 {
 }
 
 .team {
-  width: 75vw;
-  margin: 3.3vw auto 3.5vw auto;
-  font-family: "Roboto", sans-serif;
+  width: 86vw;
+  margin: 2.8vw auto 3.5vw auto;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
 }
 .team h2 {
@@ -1197,6 +1198,7 @@ button#count3 {
   font-size: 40px;
   line-height: 47px;
   color: #000000;
+  text-align: center;
   margin: 0;
   padding: 0;
 }
@@ -1212,10 +1214,10 @@ button#count3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 3.1vw 0;
 }
 .team__card img {
