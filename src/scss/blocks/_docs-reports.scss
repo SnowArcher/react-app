@@ -1,31 +1,46 @@
- @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
 
 .docs {
     box-sizing: border-box;
-    width: 40vw;
-    margin: 30px auto;
-    font-family: 'Roboto', sans-serif;
+    width: 42vw;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
-
-    &_wrapper {
-        width: 35vw;
-        margin: 2.2vw auto 3.3vw auto;
+    display: flex;
+    flex-direction: column;
         h2 {
-            font-weight: 700;
+            font-weight: 500;
             font-size: 40px;
-            line-height: 47px;
+            line-height: 120%;
             text-align: center;
+            font-feature-settings: 'case' on;
             color: #000000;
+            margin: 0;
+            padding: 0;
         }
-        p {
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 20px;
-            text-align: center;
-            color: #1F1F1F;
+        &__statute {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            div{
+                border: 1px solid #000000;
+                border-radius: 20px;
+                width: 270px;
+                min-height: 66px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                h3 {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 120%;
+                    color: #000000;
+                    text-align: center;
+                }
+            }
         }
-    }
+//////////////////////////
     
     &__title {
         border: 1px solid #000000;

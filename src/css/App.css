@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
@@ -936,28 +935,62 @@ button#count3 {
 .docs {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 40vw;
-  margin: 30px auto;
-  font-family: "Roboto", sans-serif;
+  width: 42vw;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-.docs_wrapper {
-  width: 35vw;
-  margin: 2.2vw auto 3.3vw auto;
-}
-.docs_wrapper h2 {
-  font-weight: 700;
+.docs h2 {
+  font-weight: 500;
   font-size: 40px;
-  line-height: 47px;
+  line-height: 120%;
   text-align: center;
+  -webkit-font-feature-settings: "case" on;
+          font-feature-settings: "case" on;
   color: #000000;
+  margin: 0;
+  padding: 0;
 }
-.docs_wrapper p {
-  font-weight: 700;
+.docs__statute {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.docs__statute div {
+  border: 1px solid #000000;
+  border-radius: 20px;
+  width: 270px;
+  min-height: 66px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.docs__statute div h3 {
+  font-weight: 500;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 120%;
+  color: #000000;
   text-align: center;
-  color: #1F1F1F;
 }
 .docs__title {
   border: 1px solid #000000;
