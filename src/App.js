@@ -6,7 +6,7 @@ import DocsReports from './components/about-fund/docs-reports/DocsReports';
 //import SuccesStory from './components/about-fund/mission-story/SuccesStory';
 import OurTeam from './components/about-fund/team-partners/OurTeam';
 //import Contacts from './components/contacts/Contacts';
-//import CurrentNeeds from './components/projects/current-projects/CurrentNeeds';
+import CurrentNeeds from './components/projects/current-projects/CurrentNeeds';
 //import Previous from './components/projects/previous-projects/Previous';
 
 function App() {
@@ -19,8 +19,9 @@ function App() {
             <Route path="/docs" element={<DocsReports />} />
             {/* <Route path="/story" element={<SuccesStory />} /> */}
             <Route path="/team" element={<OurTeam />} />
-            {/* <Route path="/contacts" element={<Contacts />} />
             <Route path="/current" element={<CurrentNeeds />} />
+            {/* <Route path="/contacts" element={<Contacts />} />
+            
             <Route path="/previous" element={<Previous />} /> */}
           </Routes>
       </div>
