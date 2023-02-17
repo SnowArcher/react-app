@@ -10,20 +10,20 @@ function DocsReports () {
                     <h3>Структура власності</h3>
                 </div>
             </div>
-            <div className="docs__report-wrapper">
-                <div className="docs__report">
+            <div className="docs__references">
+                <div className="docs__references_award">
                    <img src="./../img/img_docs/award.png" alt="award"/>
                 </div>
-                <div className="docs__card">
-                    <div className="docs__title">
+                <div className="docs__references_items">
+                    <div className="docs__references_item">
                         <h3>Довідка про відкриття рахунку</h3>
                     </div>
-                    <div className="docs__title">
+                    <div className="docs__references_item">
                         <h3>Довідка присвоєння ознаки неприбутковості</h3> 
                     </div>
                 </div>
             </div>
-            <div>
+            <div className="docs__extract">
                 <h3>Виписка з державного реєстру</h3>
             </div>
             <div className="docs__report">
@@ -32,11 +32,9 @@ function DocsReports () {
                     <span>Nov 22, 2022</span>
             </div>
             <div className="docs__request">
-                <p>Didn't find the information you needed?</p>
+                <p>Не знайшли потрібну інформацію?</p>
                 <div className="docs__request_btn">
-                    <a href="/"> 
-                        <p>Request more info</p>
-                        <img src="../img/Vector1.svg" alt="vector"/>
+                    <a href="/"><span>Запит на додаткову інформацію</span>                     
                     </a>
                 </div>
             </div>
