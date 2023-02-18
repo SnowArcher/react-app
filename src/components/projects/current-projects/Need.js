@@ -1,32 +1,17 @@
-import Image3 from "../../img/Image3.png";
-import share from "../../img/share.svg";
-import arrowForwardCircle from "../../img/arrowForwardCircle.svg";
+import "./../../../scss/blocks/_need.scss"
 
 
-function Need () {
+function Need ({src,title,target,longDesc}) {
     return (
         <>
             <div className="need">
-                <h2> Need 1 </h2>
+                <img src="./../../img/img_current/need1.png" alt="need"/>
                 <div className="need__description">
-                    <img src={Image3} alt="need"/>
-                    <div className="need__description_wrapper">
-                        <h4>62 667 UAH</h4>
-                        <ul>
-                            <li>Lorem ipsum dolor sit amet, cum sapientem honestatis ea, verear labores feugait sea in, cu justo suscipiantur mel.</li>
-                            <li>Lorem ipsum dolor sit amet, cum sapientem honestatis ea, verear labores feugait sea in, cu justo suscipiantur mel.</li>
-                            <li>Lorem ipsum dolor sit amet, cum sapientem honestatis ea, verear labores feugait sea in, cu justo suscipiantur mel.</li>
-                            <li>Lorem ipsum dolor sit amet, cum sapientem honestatis ea, verear labores feugait sea in, cu justo suscipiantur mel.</li>
-                        </ul>
-                        <div className="need__button">
-                            <button className="need__button_share">
-                                <img src={share} alt="share"/>
-                            </button>
-                            <button className="need__button_donate">
-                                <span>Donate</span>
-                            <img src={arrowForwardCircle} alt="arrow"/>
-                            </button>
-                        </div>
+                    <h3>Ремонт приміщення волонтерського штабу після пожежі</h3>
+                    <h4>85 000 грн</h4>
+                    <p>Перед нами стоїть дуже важливе питання ремонту, бо це приміщення не тільки працює як пункт прийому та  видачі гуманітарної допомоги, але і як облаштований дитячий центр, у якому проходять заняття для малечі. У нашому приміщенні зараз немає опалення та електричної проводки, пошкодженні внутрішні перегородки. Якщо ми не відремонтуємо ці жахливі наслідки пожежі, то не зможемо працювати.</p>
+                    <div className="need_button">
+                        <a href="/"><span>Допомогти</span></a>
                     </div>
                 </div>
             </div>

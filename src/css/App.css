@@ -820,7 +820,7 @@ button#count3 {
   margin: 1.39vw 0;
 }
 .needs__description h3 {
-  min-height: 72px;
+  min-height: 100px;
 }
 .needs__cards {
   list-style: none;

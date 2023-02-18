@@ -1,11 +1,24 @@
+// import { useState } from "react";
+// import Modal from "../Modal";
+import {needs} from "./NeedsList.js"
+import NeedItem from "./NeedItem";
 
 const CurrentNeeds = () => {
+    // const [modalActive, setModalActive] = useState(false);
     return (
     <>
     <div className="needs">
         <h2> Поточні потреби</h2>
         <ul className="needs__cards">
-        <li>
+        {needs.map((need, id)=>{
+                    return <NeedItem  key={id}
+                                title={need.title}
+                                src={need.src}
+                                target={need.target} 
+                                description={need.description} />
+                }) 
+            }
+       { /* <li onClick={() => setModalActive(true)}>
             <div className="needs_card">
                 <img src="./../../img/img_current/need1.png" alt="need-item" />
                 <div className="needs__description">
@@ -16,7 +29,7 @@ const CurrentNeeds = () => {
                 <div className="needs__cards_button">
                 <a href="/"><span>Допомогти</span></a>
                 </div>
-            </div>    
+            </div> 
         </li>
         <li>
             <div className="needs_card">
@@ -57,9 +70,10 @@ const CurrentNeeds = () => {
                 </div>
             </div>
 
-        </li>
+        </li> */}
         </ul>
-        </div>    
+        </div> 
+  
     </>
     );
 }
