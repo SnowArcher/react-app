@@ -2,27 +2,27 @@
 
 
 .need {
-    
     padding: 24px 37px 44px 44px;
     max-width: 1240px;
-    // min-height: 658px;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     display: flex;
     flex-direction: row;
-    // img {
-    //     width: 607px;
-    //     height: 590px;
-    // }
+    position: relative;
+    &_img {
+        max-width: 50%;
+    }
     &__description {
         display: flex;
         flex-direction: column;
         width: 510px;
+        margin: 1vw 0 0 2.8vw;
         h3 {
             font-weight: 600;
             font-size: 20px;
             line-height: 120%;
             color: #333333;
+            min-height: 72px;
         }
         h4 {
             font-weight: 700;
@@ -37,13 +37,11 @@
             font-size: 16px;
             line-height: 130%;
             color: #000000;
+            margin: 1.1vw 0 2.8vw;
         }
     }
-
-}
-.need_button {
-        
-    display: flex;
+    &_button {
+        display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -62,10 +60,16 @@
         color: #000000;
         text-decoration: none;
         cursor: pointer;
+        }
+    }
+    &_button:hover{
+        background: #FFE69A;
     }
 }
-// &_button:hover{
-//     background: #FFE69A;
-// }
-
+.btn_close {
+    position: absolute;
+    top: 28px;
+    right: 28px;
+    z-index: 1;
+}
    

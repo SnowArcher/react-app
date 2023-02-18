@@ -1,6 +1,7 @@
 const needs = [
     {
       src: "./../../img/img_current/need1.png",
+      srcBig: "./../../img/img_current/need1_big.png",
       id: 1,
       title: 'Ремонт приміщення волонтерського штабу після пожежі',
       target: '20 000 грн',
@@ -9,6 +10,7 @@ const needs = [
     },
     {
       src: "./../../img/img_current/need2.png",
+      srcBig: "./../../img/img_current/need2_big.png",
       id: 2,
       title: 'Допомога дорослим і дітям деокупованих сіл',
       target: '80 000 грн',
@@ -17,6 +19,7 @@ const needs = [
     },
     {
       src: "./../../img/img_current/need3.png",
+      srcBig: "./../../img/img_current/need3_big.png",
       id: 3,
       title: 'Ремонт транспорту, що розвозить гуманітарну допомогу',
       target: '13 500 грн',
@@ -25,6 +28,7 @@ const needs = [
     },
     {
       src: "./../../img/img_current/need4.png",
+      srcBig: "./../../img/img_current/need4_big.png",
       id: 4,
       title: 'Збір на придбання товарів для тварин, які втратили дім через війну',
       target: '45 000 грн',

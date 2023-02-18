@@ -1,10 +1,9 @@
-// import { useState } from "react";
-// import Modal from "../Modal";
+
 import {needs} from "./NeedsList.js"
 import NeedItem from "./NeedItem";
 
 const CurrentNeeds = () => {
-    // const [modalActive, setModalActive] = useState(false);
+
     return (
     <>
     <div className="needs">
@@ -15,7 +14,9 @@ const CurrentNeeds = () => {
                                 title={need.title}
                                 src={need.src}
                                 target={need.target} 
-                                description={need.description} />
+                                description={need.description}
+                                longDesc={need.longDesc}
+                                srcBig={need.srcBig} />
                 }) 
             }
        { /* <li onClick={() => setModalActive(true)}>
