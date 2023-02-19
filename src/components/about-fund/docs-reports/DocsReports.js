@@ -1,5 +1,8 @@
+import Breadcrumbs from "./../../main-page/Breadcrumbs"
 function DocsReports () {
     return (
+        <>
+        <Breadcrumbs/>
         <div className="docs">
             <h2>Документація та звітність</h2>
             <div className="docs__statute">
@@ -39,6 +42,7 @@ function DocsReports () {
                 </div>
             </div>
         </div>
+        </>
     );
 }
 export default DocsReports;
