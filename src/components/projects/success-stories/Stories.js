@@ -1,70 +1,22 @@
-import Image1 from "./../../img/Image1.png";
+import SuccessStory from "./SuccesStory";
+import {stories} from "./SuccessStoriesList"
+
 
 function Stories () {
     return (
     <>
-        <div className="wrapper">
-
-            <div className="main-title">
-                <h2> Success stories</h2>
-                <p>Lorem ipsum dolor sit amet, cum sapientem honestatis ea, verear labores feugait sea in, cu justo suscipiantur mel.</p>
-            </div>
-            <ul className="stories-cards">
-                <li>
-                    <img src={Image1} alt=""/>
-                    <h3>Title</h3>
-                    <p>Lorem ipsum dolor sit amet, cum sapientem honestatis ea, verear labores feugait sea in, cu justo suscipiantur mel.</p>
-                    <span>Nov 22, 2022</span>
-                </li>
-                <li>
-                    <img src={Image1} alt=""/>
-                    <h3>Title</h3>
-                    <p>Lorem ipsum dolor sit amet, cum sapientem honestatis ea, verear labores feugait sea in, cu justo suscipiantur mel.</p>
-                    <span>Nov 22, 2022</span>
-                </li>
-                <li>
-                    <img src={Image1} alt=""/>
-                    <h3>Title</h3>
-                    <p>Lorem ipsum dolor sit amet, cum sapientem honestatis ea, verear labores feugait sea in, cu justo suscipiantur mel.</p>
-                    <span>Nov 22, 2022</span>
-                </li>
-                <li>
-                    <img src={Image1} alt=""/>
-                    <h3>Title</h3>
-                    <p>Lorem ipsum dolor sit amet, cum sapientem honestatis ea, verear labores feugait sea in, cu justo suscipiantur mel.</p>
-                    <span>Nov 22, 2022</span>
-                    
-                </li>
-                <li>
-                    <img src={Image1} alt=""/>
-                    <h3>Title</h3>
-                    <p>Lorem ipsum dolor sit amet, cum sapientem honestatis ea, verear labores feugait sea in, cu justo suscipiantur mel.</p>
-                    <span>Nov 22, 2022</span>
-                </li>
-                <li>
-                    <img src={Image1} alt=""/>
-                    <h3>Title</h3>
-                    <p>Lorem ipsum dolor sit amet, cum sapientem honestatis ea, verear labores feugait sea in, cu justo suscipiantur mel.</p>
-                    <span>Nov 22, 2022</span>
-                </li>
-                <li>
-                    <img src={Image1} alt=""/>
-                    <h3>Title</h3>
-                    <p>Lorem ipsum dolor sit amet, cum sapientem honestatis ea, verear labores feugait sea in, cu justo suscipiantur mel.</p>
-                    <span>Nov 22, 2022</span>
-                </li>
-                <li>
-                    <img src={Image1} alt=""/>
-                    <h3>Title</h3>
-                    <p>Lorem ipsum dolor sit amet, cum sapientem honestatis ea, verear labores feugait sea in, cu justo suscipiantur mel.</p>
-                    <span>Nov 22, 2022</span>
-                </li>
-                <li>
-                    <img src={Image1} alt=""/>
-                    <h3>Title</h3>
-                    <p>Lorem ipsum dolor sit amet, cum sapientem honestatis ea, verear labores feugait sea in, cu justo suscipiantur mel.</p>
-                    <span>Nov 22, 2022</span>
-                </li>
+        <div className="success-stories">
+            <h2> Успішні історії</h2>
+            <ul className="success-stories__cards">
+            {stories.map((story, id)=>{
+                    return <SuccessStory  key={id}
+                                title={story.title}
+                                src={story.src}
+                                description={story.description}
+                                date={story.date}
+                                srcBig={story.srcBig} />
+                }) 
+            }
             </ul>
         </div>    
     </>

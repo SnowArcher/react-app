@@ -1276,8 +1276,8 @@ button#count3 {
 
 .btn_close {
   position: absolute;
-  top: 28px;
-  right: 28px;
+  top: 22px;
+  right: 22px;
   z-index: 1;
 }
 
