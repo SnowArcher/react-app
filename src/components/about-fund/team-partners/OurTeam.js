@@ -1,6 +1,9 @@
+
+
 function OurTeam () {
     return (
         <>
+
         <div className="team">
             <h2>Наша команда</h2>
                 <img src="../img/img_team/Grybkov.png" alt="photo_item"/>

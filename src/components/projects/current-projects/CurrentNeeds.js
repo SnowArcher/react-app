@@ -1,13 +1,13 @@
 
 import {needs} from "./NeedsList.js"
 import NeedItem from "./NeedItem";
-import Breadcrumbs from "./../../main-page/Breadcrumbs"
+
 
 const CurrentNeeds = () => {
 
     return (
     <>
-    <Breadcrumbs/>
+
     <div className="needs">
         <h2> Поточні потреби</h2>
         <ul className="needs__cards">

@@ -2,8 +2,11 @@ import Programms from "./Programms-conteiner";
 import SubheadInfo from "./SubheadInfo";
 import Story from "./Story-container";
 
+
 export default function MissionStory() {
     return (
+        <>
+
         <div>
             <SubheadInfo
                 title="Наша головна мета"
@@ -20,5 +23,6 @@ export default function MissionStory() {
             />
             <Story/>
         </div>
+        </>
     );
 }

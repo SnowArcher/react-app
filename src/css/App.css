@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 * {
@@ -1168,63 +1168,10 @@ button#count3 {
 }
 
 .need {
-  width: 75vw;
-  margin: 0 auto;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  padding: 24px 37px 44px 44px;
+  max-width: 1240px;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
-}
-.need h2 {
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 47px;
-  text-align: center;
-  color: #000000;
-  margin: 0;
-}
-.need__description {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  min-height: 371px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: row;
-      -ms-flex-pack: row;
-          justify-content: row;
-  margin: 3.7vw 0 0;
-}
-.need__description img {
-  width: 30.6vw;
-  height: 25.8vw;
-}
-.need__description h4 {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  color: #000000;
-  margin: 0 0 0.83vw;
-}
-.need__description ul {
-  list-style: none;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: #1F1F1F;
-  margin: 0;
-  padding: 0;
-}
-.need__description ul li {
-  margin-bottom: 0.97vw;
-  text-align: justify;
-}
-.need__description_wrapper {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 1.77vw 1.39vw 1.77vw 2.2vw;
-}
-.need__button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1235,47 +1182,94 @@ button#count3 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
 }
-.need__button_share {
-  width: 44px;
-  height: 44px;
-  border: 1px solid #1F1F1F;
-  border-radius: 44px;
-  background-color: white;
-  cursor: pointer;
+.need_img {
+  max-width: 50%;
 }
-.need__button_share img {
-  width: 20px;
-  height: 20px;
-  display: inline-block;
-  margin-top: 0.3vw;
-}
-.need__button_donate {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  color: #FFFFFF;
-  background: #1F1F1F;
-  border-radius: 44px;
-  width: 86.5%;
-  min-height: 44px;
-  cursor: pointer;
+.need__description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 510px;
+  margin-top: 1vw;
+}
+.need__description h3 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  color: #333333;
+  min-height: 72px;
+}
+.need__description h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000000;
+}
+.need__description p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #000000;
+  margin: 1.1vw 0 2.8vw;
+}
+.need_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 284px;
+  min-height: 43px;
+  background: #FFD966;
 }
-.need__button_donate img {
-  width: 20px;
-  height: 20px;
-  display: inline-block;
-  margin-left: 1vw;
+.need_button a {
+  width: 100%;
+  height: 100%;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.need_button:hover {
+  background: #FFE69A;
+}
+
+.btn_close {
+  position: absolute;
+  top: 28px;
+  right: 28px;
+  z-index: 1;
 }
 
 .team {
