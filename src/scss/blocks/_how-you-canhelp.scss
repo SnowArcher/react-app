@@ -86,7 +86,7 @@ button#eur {
         display: none;
     }
     &:hover {
-        background-color: #0275ED;
+        background-color: rgba(31, 30, 27, 0.1);
     }
 }
 .rate__button:not(:last-child) {
@@ -132,7 +132,7 @@ button#count3 {
         display: none;
     }
     &:hover {
-        background-color: #0275ED;
+        background-color: rgba(31, 30, 27, 0.1);
     }
 }
 .count__button:not(:last-child) {
@@ -156,10 +156,15 @@ button#count3 {
         color: #333333;
         border-radius: 4px 4px 0px 0px;
         padding: 17.5px calc(16 / 1440) * 100vw;
-        background: rgba(255, 255, 255, 0.43);
         border-bottom: 1px solid #333333;
+        &::placeholder {
+            opacity: 1;
+        }
+        &:focus::placeholder {
+            color: transparent;
+        }
         &:hover {
-            background-color: #FFD966;
+            background: rgba(255, 255, 255, 0.43);
             border-bottom: 1px solid #0275ED;
         }
     }
@@ -186,7 +191,8 @@ button#count3 {
             padding-left: calc(8 / 1440) * 100vw;
         }
         &:hover {
-            background-color: red;
+            background-color: #6FB1F5;
+
         }
     }
     .btn-pay-pal {
@@ -208,7 +214,7 @@ button#count3 {
             padding-left: calc(8 / 1440) * 100vw;
         }
         &:hover {
-            background-color: red;
+            background-color: #FFE9A8;
         }
     }
 } 

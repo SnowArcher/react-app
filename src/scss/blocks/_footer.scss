@@ -1,0 +1,86 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background: #1E1E1E;
+    padding-top: 72px;
+    padding-bottom: 72px;
+    height: 426px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    color: #FFFFFF;
+    .footer__info {
+        display: flex;
+        flex-direction: column;
+        margin-left: calc(288.5 / 1440) * 100vw;
+        max-width: 425px;
+        height: 283px;
+        h1 {
+            font-weight: 500;
+            font-size: 2.5em;
+            line-height: 120%;
+            margin-bottom: 24px;
+        }
+        p {
+            padding-right: calc(17 / 1440) * 100vw;
+            margin-bottom: 32px;
+            font-weight: 400;
+            font-size: 1em;
+            line-height: 130%;
+        }
+        button {
+            height: 47px;
+            width: 100%;
+            font-weight: 500;
+            font-size: 1em;
+            line-height: 120%;
+            color: #000000;
+            background: #FFD966;
+        }
+    }
+    .footer__contacts {
+        display: flex;
+        flex-direction: column;
+        margin-right: calc(288.5 / 1440) * 100vw;
+        max-width: 318px;
+        height: 283px;
+        h1 {
+            font-weight: 500;
+            font-size: 2.5em;
+            line-height: 120%;
+            margin-bottom: 14px;
+        }
+        .contacts__info {
+            margin-bottom: 5px;
+            padding-left: calc(12 / 1440) * 100vw;
+            .info {
+                font-size: 0.875em;
+                p:nth-child(1) {
+                    font-weight: 500;
+                    line-height: 130%;
+                    color: #FFFFFF;
+                    margin-bottom: 4px;
+                }
+                p:nth-child(2) {
+                    font-weight: 400;
+                    line-height: 130%;
+                    color: #BFBFBF;
+                }
+            }
+            .info:not(:last-child) {
+                margin-bottom: 16px;
+            }
+        }
+        .social-media {
+            display: flex;
+            button {
+                display: block;
+                width: 48px;
+                height: 48px;
+                img {
+                    margin: auto;
+                }
+            }
+        }      
+    }
+}

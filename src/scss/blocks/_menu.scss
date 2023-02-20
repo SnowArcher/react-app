@@ -1,12 +1,7 @@
 .menu {
     position: sticky;
-    max-width: 1440px;
-    width: 100%;
     max-height: 86px;
     background-color: #1E1E1E;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -65,15 +60,20 @@
         text-align: center;
         font-weight: 500;
         color: #000000;
+        padding: 0;
         background-color: #FFD966;
         width: calc(142 / 1440) * 100vw;
         height: 48px;
         a {
-            margin-left: auto;
-            margin-right: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
         }
         &:hover {
-            background-color: #FFFFFF;
+            background: #FFE9A8;
+
         }
     }
     > li:not(:last-child) {
@@ -88,9 +88,9 @@
 .dropdown {
     position: absolute;
     top: 175%;
-    margin-left: calc(-20 / 1440) * 100vw;
+    //margin-left: calc(-20 / 1440) * 100vw;
     display: none;
-    width: calc(200 / 1440) * 100vw;
+    //width: calc(200 / 1440) * 100vw;
     z-index: 2;
     li {
         color: #333333;
@@ -98,9 +98,14 @@
         height: 56px;
         align-items: center;
         a {
-            display: block;
-            text-align: left;
-            padding-left: calc(20 / 1440) * 100vw;
+            height: 100%;
+            width: 100%;
+            // text-align: left;
+            // padding-left: calc(20 / 1440) * 100vw;
+        }
+        span {
+            margin-top: auto;
+            margin-bottom: auto;
         }
     }
     li:hover {

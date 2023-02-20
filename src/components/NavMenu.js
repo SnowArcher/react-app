@@ -19,7 +19,7 @@ function NavMenu () {
                         </div>
                         <div className={`dropdown ${open1? 'active' : 'inactive'}`}>
                             <ul>
-                                <li><Link className="ref" to="/story">Mission & Story</Link></li>
+                                <li><Link className="ref" to="/story"><span>Mission & Story</span></Link></li>
                                 <li><Link className="ref" to="/team">Team & Parthners</Link></li>
                                 <li><Link className="ref" to="/docs">Docs & Reports</Link></li>
                             </ul>
@@ -51,7 +51,12 @@ function NavMenu () {
                         </div>
                     </li>
                     <li>
-                        <a href="#donate">Donate</a>
+                        {/* <a href="#donate">Donate</a> */}
+                        <Link to="/" className="ref" onClick={() => {
+                        setTimeout(() => {document.getElementById("donate").scrollIntoView(); console.log("finish");}, 300); 
+                    }}>
+                        <span>Donate</span>
+                    </Link>
                     </li>
                 </ul>
             </div>

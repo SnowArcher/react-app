@@ -34,7 +34,8 @@
     position: relative;
     z-index: 1;
     height: 100%;
-    background-color: #BFBFBF;
+    background-color:#ECECEC;
+
 }
 .card__content:hover {
     transform: scale(0.9);
@@ -76,7 +77,7 @@
     font-size: 1em;
     line-height: 120%;
     &:hover {
-        background-color: green;
+        background: #FFE9A8;
     }
 }
 .allCurrentNeeds {
@@ -98,6 +99,6 @@
         padding-left: calc(8 / 1440) * 100vw;
     }
     &:hover {
-        background-color: white;
+        background-color: rgba(31, 30, 27, 0.1);
     }
 }
