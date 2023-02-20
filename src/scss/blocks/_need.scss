@@ -42,6 +42,10 @@
             line-height: 130%;
             color: #000000;
             margin: 1.1vw 0 2.8vw;
+            line-clamp: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
         }
     }
     &_button {
