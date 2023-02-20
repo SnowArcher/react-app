@@ -1,7 +1,12 @@
 function HowYouCanHelp() {
     return (
+<<<<<<< HEAD
         <div className="how-you-can-help">
             <h1>How you can help?</h1>
+=======
+        <div class="how-you-can-help">
+            <h1 id="ancore">How you can help?</h1>
+>>>>>>> cd724c5677c05f023e564244d0be5f924199f53d
             <p>You can support us in several ways, we will be grateful for any help. This will make our work better and more efficient.</p>
             <div className="help-content" id='donate'>
                 <div className="help-card">

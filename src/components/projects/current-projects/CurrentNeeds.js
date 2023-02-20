@@ -1,120 +1,82 @@
-import Image1 from "./../../img/Image1.png"
-import share from "./../../img/share.svg"
+
+import {needs} from "./NeedsList.js"
+import NeedItem from "./NeedItem";
+
 
 const CurrentNeeds = () => {
+
     return (
     <>
-    <div class="wrapper">
-        <div class="main-title">
-            <h2> Current needs</h2>
-            <p>Lorem ipsum dolor sit amet, cum sapientem honestatis ea, verear labores feugait sea in, cu justo suscipiantur mel. </p>
-        </div>
-        <ul className="cards">
-        <li>
-            <img src={Image1} alt="" />
-            <h3>Title</h3>
-            <h4>62 667 UAH</h4>
-            <p>Lorem ipsum dolor sit amet, cum sapientem honestatis ea, verear labores feugait sea in, cu justo suscipiantur mel.</p>
-            <div className="cards__button">
-                <button className="cards__button_share">
-                    <img src={share} alt="share" />
-                </button>
-                <button className="cards__button_donate">Donate</button>
-            </div>
+
+    <div className="needs">
+        <h2> Поточні потреби</h2>
+        <ul className="needs__cards">
+        {needs.map((need, id)=>{
+                    return <NeedItem  key={id}
+                                title={need.title}
+                                src={need.src}
+                                target={need.target} 
+                                description={need.description}
+                                longDesc={need.longDesc}
+                                srcBig={need.srcBig} />
+                }) 
+            }
+       { /* <li onClick={() => setModalActive(true)}>
+            <div className="needs_card">
+                <img src="./../../img/img_current/need1.png" alt="need-item" />
+                <div className="needs__description">
+                    <h3>Ремонт приміщення волонтерського штабу після пожежі </h3>
+                    <h4>20 000 грн</h4>
+                    <p>Приміщення наразі не має опалення та електричної проводки, пошкоджені внутрішні перегородки - це дуже ускладнює роботу штабу та дитячого центру. </p>
+                </div>
+                <div className="needs__cards_button">
+                <a href="/"><span>Допомогти</span></a>
+                </div>
+            </div> 
         </li>
         <li>
-            <img src={Image1} alt="" />
-            <h3>Title</h3>
-            <h4>3 days</h4>
-            <h4>As much as we can</h4> 
-            <p>Lorem ipsum dolor sit amet, cum sapientem honestatis ea, verear labores feugait sea in, cu justo suscipiantur mel.</p>
-            <div className="cards__button">
-                <button className="cards__button_share">
-                    <img src={share} alt="share" />
-                </button>
-                <button className="cards__button_donate">Donate</button>
-            </div>
+            <div className="needs_card">
+                <img src="./../../img/img_current/need2.png" alt="need-item" />
+                <div className="needs__description">
+                    <h3>Допомога дорослим і дітям деокупованих сіл</h3>
+                    <h4>80 000 грн</h4>
+                    <p>Закупівля продуктів та пального для надання гуманітарної допомоги дітям деокупованих сіл Куп ́янського та Ізюмського районів.</p>
+                </div>
+                <div className="needs__cards_button">
+                    <a href="/"><span>Допомогти</span></a>
+                </div>
+            </div>    
         </li>
         <li>
-            <img src={Image1} alt="" />
-            <h3>Title</h3>
-            <h4>62 667 UAH</h4>
-            <p>Lorem ipsum dolor sit amet, cum sapientem honestatis ea, verear labores feugait sea in, cu justo suscipiantur mel.</p>
-            <div className="cards__button">
-                <button className="cards__button_share">
-                    <img src={share} alt="share" />
-                </button>
-                <button className="cards__button_donate">Donate</button>
-            </div>
+            <div className="needs_card">
+                <img src="./../../img/img_current/need3.png" alt="need-item" />
+                <div className="needs__description">
+                    <h3>Ремонт транспорту, що розвозить гуманітарну допомогу</h3>
+                    <h4>13 500 грн</h4>
+                    <p>Закупівля необхідних автозапчастин для транспорту, який ренулярно розвозить допомогу у Харкові та в селища Харківської області. </p>
+                </div>
+                <div className="needs__cards_button">
+                    <a href="/"><span>Допомогти</span></a>
+                </div>
+            </div>   
         </li>
         <li>
-            <img src={Image1} alt="" />
-            <h3>Need 4</h3>
-            <p>Lorem ipsum dolor sit amet, cum sapientem honestatis ea, verear labores feugait sea in, cu justo suscipiantur mel.</p>
-            <div className="cards__button">
-                <button className="cards__button_share">
-                    <img src={share} alt="share" />
-                </button>
-                <button className="cards__button_donate">Donate</button>
+            <div className="needs_card">
+                <img src="./../../img/img_current/need4.png" alt="need-item" />
+                <div className="needs__description">
+                    <h3>Збір на придбання товарів для тварин, які втратили дім через війну</h3>
+                    <h4>45 000 грн</h4>
+                    <p>Ми закуповуємо засоби догляду за тваринами, корм та вітаміни. Ми відвеземо ці речі у притулки, які організували небайдужі люди</p>
+                </div>
+                <div className="needs__cards_button">
+                    <a href="/"><span>Допомогти</span></a>
+                </div>
             </div>
-        </li>
-        <li>
-            <img src={Image1} alt="" />
-            <h3>Need 5</h3>
-            <p>Lorem ipsum dolor sit amet, cum sapientem honestatis ea, verear labores feugait sea in, cu justo suscipiantur mel.</p>
-            <div className="cards__button">
-                <button className="cards__button_share">
-                    <img src={share} alt="share" />
-                </button>
-                <button className="cards__button_donate">Donate</button>
-            </div>
-        </li>
-        <li>
-            <img src={Image1} alt="" />
-            <h3>Need 6</h3>
-            <p>Lorem ipsum dolor sit amet, cum sapientem honestatis ea, verear labores feugait sea in, cu justo suscipiantur mel.</p>
-            <div className="cards__button">
-                <button className="cards__button_share">
-                    <img src={share} alt="share" />
-                </button>
-                <button className="cards__button_donate">Donate</button>
-            </div>
-        </li>
-        <li>
-            <img src={Image1} alt="" />
-            <h3>Need 7</h3>
-            <p>Lorem ipsum dolor sit amet, cum sapientem honestatis ea, verear labores feugait sea in, cu justo suscipiantur mel.</p>
-            <div className="cards__button">
-                <button className="cards__button_share">
-                    <img src={share} alt="share" />
-                </button>
-                <button className="cards__button_donate">Donate</button>
-            </div>
-        </li>
-        <li>
-            <img src={Image1} alt="" />
-            <h3>Need 8</h3>
-            <p>Lorem ipsum dolor sit amet, cum sapientem honestatis ea, verear labores feugait sea in, cu justo suscipiantur mel.</p>
-            <div className="cards__button">
-                <button className="cards__button_share">
-                    <img src={share} alt="share" />
-                </button>
-                <button className="cards__button_donate">Donate</button>
-            </div>
-        </li>
-        <li>
-            <img src={Image1} alt="" />
-            <h3>Need 9</h3>
-            <p>Lorem ipsum dolor sit amet, cum sapientem honestatis ea, verear labores feugait sea in, cu justo suscipiantur mel.</p>
-            <div className="cards__button">
-                <button className="cards__button_share">
-                    <img src={share} alt="share" />
-                </button>
-                <button className="cards__button_donate">Donate</button>
-            </div>
-        </li>
+
+        </li> */}
         </ul>
-        </div>    
+        </div> 
+  
     </>
     );
 }
