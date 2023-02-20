@@ -1,6 +1,6 @@
 function HowYouCanHelp() {
     return (
-        <div class="how-you-can-help">
+        <div className="how-you-can-help">
             <h1>How you can help?</h1>
             <p>You can support us in several ways, we will be grateful for any help. This will make our work better and more efficient.</p>
             <div className="help-content" id='donate'>

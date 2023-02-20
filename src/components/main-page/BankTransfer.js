@@ -1,14 +1,14 @@
 import React, {useState} from "react";
 import BankRow from "./BankRow";
-
+//document.getElementById("banklist").scrollIntoView() // window.scrollBy(0, 200)
 function BankTransfer() {
     const [open, setOpen] = useState(false);
     return (
         <div className="bank-transfer">
             <div className="bank-transfer__line">
                 <p>Bank Transfer</p>
-                <button className="btnTransfer" onClick={()=>{setOpen(!open)}}>
-                    <img src="../img/chevron-up.svg" class={`arrow-bank ${open? 'active' : ''}`} alt='bank'/>
+                <button className="btnTransfer" onClick={()=>{setOpen(!open); window.scrollBy(0, open? -300 : 300)}}>
+                    <img src="../img/chevron-up.svg" className={`arrow-bank ${open? 'active' : ''}`} alt='bank'/>
                 </button>
             </div>
             <div className={`bank-transfer__content ${open? 'active' : ''}`}>

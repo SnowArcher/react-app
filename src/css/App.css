@@ -43,19 +43,13 @@ ul, li {
 body {
   width: 100%;
   max-width: 100%;
-  overflow-x: hidden;
-  background-color: #BFBFBF;
+  background: #ECECEC;
 }
 
 .menu {
   position: sticky;
-  max-width: 1440px;
-  width: 100%;
   max-height: 86px;
   background-color: #1E1E1E;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -134,16 +128,26 @@ body {
   text-align: center;
   font-weight: 500;
   color: #000000;
+  padding: 0;
   background-color: #FFD966;
   width: 9.8611111111vw;
   height: 48px;
 }
 .menu-links > li:last-child a {
-  margin-left: auto;
-  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
 }
 .menu-links > li:last-child:hover {
-  background-color: #FFFFFF;
+  background: #FFE9A8;
 }
 .menu-links > li:not(:last-child) {
   margin-right: 3.125vw;
@@ -162,9 +166,7 @@ body {
 .dropdown {
   position: absolute;
   top: 175%;
-  margin-left: -1.3888888889vw;
   display: none;
-  width: 13.8888888889vw;
   z-index: 2;
 }
 .dropdown li {
@@ -176,9 +178,12 @@ body {
           align-items: center;
 }
 .dropdown li a {
-  display: block;
-  text-align: left;
-  padding-left: 1.3888888889vw;
+  height: 100%;
+  width: 100%;
+}
+.dropdown li span {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 .dropdown li:hover {
   background: rgba(31, 30, 27, 0.1);
@@ -197,7 +202,6 @@ body {
   width: 100%;
   max-height: 814px;
   padding-left: 6.9444444444vw;
-  padding-right: 6.9444444444vw;
   margin-left: auto;
   margin-right: auto;
   display: -webkit-box;
@@ -245,43 +249,40 @@ body {
   padding-left: 0.5555555556vw;
 }
 .btnDonate:hover {
-  background-color: white;
+  background: #FFE9A8;
 }
 
-.hero__carousel {
-  position: relative;
+.bk-slider {
+  margin: 100px 0 100px auto;
+  width: 780px;
+  height: 620px;
+  z-index: 0;
 }
 
-.images {
-  width: 558px;
-  height: 614px;
-  background-color: #FFD966;
+.swiper {
+  width: 780px;
+  height: 620px;
 }
 
-.next_images {
+.swiper-slide {
+  background-color: #ECECEC;
+}
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.btnNext {
   position: absolute;
-  top: 10%;
-  left: 110%;
-  width: 279px;
-  height: 307px;
-  background-color: #FFD966;
-  overflow-x: hidden;
+  width: 100px;
+  height: 48px;
+  border-radius: 44px;
+  right: 2.5%;
+  top: 90%;
+  z-index: 50;
 }
-
-.hide_images {
-  position: absolute;
-  display: none;
-  width: 558px;
-  height: 614px;
-  left: 150%;
-  top: 0%;
-  background-color: #FFD966;
-}
-
-.btnCarousel {
-  position: absolute;
-  bottom: 20%;
-  left: 110%;
+.btnNext:hover {
+  background: rgba(31, 30, 27, 0.1);
 }
 
 .current-needs {
@@ -327,7 +328,7 @@ body {
   position: relative;
   z-index: 1;
   height: 100%;
-  background-color: #BFBFBF;
+  background-color: #ECECEC;
 }
 
 .card__content:hover {
@@ -376,7 +377,7 @@ body {
   line-height: 120%;
 }
 .cardDonateBtn:hover {
-  background-color: green;
+  background: #FFE9A8;
 }
 
 .allCurrentNeeds {
@@ -406,7 +407,7 @@ body {
   padding-left: 0.5555555556vw;
 }
 .btnAllNeeds:hover {
-  background-color: white;
+  background-color: rgba(31, 30, 27, 0.1);
 }
 
 .how-you-can-help {
@@ -516,7 +517,7 @@ button#eur {
   display: none;
 }
 .rate__button:hover {
-  background-color: #0275ED;
+  background-color: rgba(31, 30, 27, 0.1);
 }
 
 .rate__button:not(:last-child) {
@@ -576,7 +577,7 @@ button#count3 {
   display: none;
 }
 .count__button:hover {
-  background-color: #0275ED;
+  background-color: rgba(31, 30, 27, 0.1);
 }
 
 .count__button:not(:last-child) {
@@ -601,11 +602,40 @@ button#count3 {
   color: #333333;
   border-radius: 4px 4px 0px 0px;
   padding: 17.5px 1.1111111111vw;
-  background: rgba(255, 255, 255, 0.43);
   border-bottom: 1px solid #333333;
 }
+.donate-form > input::-webkit-input-placeholder {
+  opacity: 1;
+}
+.donate-form > input::-moz-placeholder {
+  opacity: 1;
+}
+.donate-form > input:-ms-input-placeholder {
+  opacity: 1;
+}
+.donate-form > input::-ms-input-placeholder {
+  opacity: 1;
+}
+.donate-form > input::placeholder {
+  opacity: 1;
+}
+.donate-form > input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+.donate-form > input:focus::-moz-placeholder {
+  color: transparent;
+}
+.donate-form > input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+.donate-form > input:focus::-ms-input-placeholder {
+  color: transparent;
+}
+.donate-form > input:focus::placeholder {
+  color: transparent;
+}
 .donate-form > input:hover {
-  background-color: #FFD966;
+  background: rgba(255, 255, 255, 0.43);
   border-bottom: 1px solid #0275ED;
 }
 .donate-form sup {
@@ -638,7 +668,7 @@ button#count3 {
   padding-left: 0.5555555556vw;
 }
 .donate-form .btn-credit-card:hover {
-  background-color: red;
+  background-color: #6FB1F5;
 }
 .donate-form .btn-pay-pal {
   margin-top: 28px;
@@ -666,7 +696,7 @@ button#count3 {
   padding-left: 0.5555555556vw;
 }
 .donate-form .btn-pay-pal:hover {
-  background-color: red;
+  background-color: #FFE9A8;
 }
 
 .help-photo > img {
@@ -706,7 +736,7 @@ button#count3 {
   height: 48px;
 }
 .bank-transfer__line .btnTransfer:hover {
-  background-color: aqua;
+  background-color: rgba(31, 30, 27, 0.1);
 }
 
 .arrow-bank {
@@ -724,7 +754,7 @@ button#count3 {
 }
 
 .bank-transfer__content {
-  display: block;
+  display: none;
 }
 .bank-transfer__content > h1 {
   text-align: center;
@@ -769,7 +799,7 @@ button#count3 {
   border-radius: 100%;
 }
 .transfer-line .btnCopy:hover {
-  background-color: #FFD966;
+  background-color: rgba(31, 30, 27, 0.1);
 }
 
 .btnCopyAll {
@@ -794,7 +824,7 @@ button#count3 {
   padding-left: 0.5555555556vw;
 }
 .btnCopyAll:hover {
-  background-color: red;
+  background-color: #FFE9A8;
 }
 
 .bank-list_eur {
@@ -1502,4 +1532,273 @@ button#count3 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin-left: 2.2vw;
+}
+
+.support {
+  max-width: 1440px;
+  height: 837px;
+  margin-top: 100px;
+  padding-top: 134px;
+  padding-left: 6.9444444444vw;
+  padding-right: 6.9444444444vw;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.support .support__content {
+  max-width: 604px;
+  height: 593px;
+}
+.support .support__content > h1 {
+  font-weight: 500;
+  font-size: 2.5em;
+  line-height: 120%;
+  margin-bottom: 36px;
+}
+.support .support__content img {
+  width: 100%;
+  margin-bottom: 36px;
+}
+.support .support__content > p {
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 130%;
+  color: #1F1F1F;
+}
+.support .support__content > p:not(:last-child) {
+  margin-bottom: 1em;
+}
+.support .support__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 496px;
+  height: 477px;
+}
+.support .support__form input {
+  padding: 4px 1.1111111111vw;
+  border-bottom: 1px solid #333333;
+  max-width: 496px;
+  height: 48px;
+}
+.support .support__form input::-webkit-input-placeholder {
+  font-size: 1em !important;
+  color: #333333;
+}
+.support .support__form input::-moz-placeholder {
+  font-size: 1em !important;
+  color: #333333;
+}
+.support .support__form input:-ms-input-placeholder {
+  font-size: 1em !important;
+  color: #333333;
+}
+.support .support__form input::-ms-input-placeholder {
+  font-size: 1em !important;
+  color: #333333;
+}
+.support .support__form input::placeholder {
+  font-size: 1em !important;
+  color: #333333;
+}
+.support .support__form input:not(:last-child) {
+  margin-bottom: 24px;
+}
+.support .support__form input:last-child {
+  margin-bottom: 44px;
+}
+.support .support__form textarea {
+  resize: none;
+  max-width: 496px;
+  height: 173px;
+  padding: 9.5px 1.1111111111vw;
+  margin-bottom: 44px;
+}
+.support .support__form textarea::-webkit-input-placeholder {
+  font-size: 1em !important;
+  color: #333333;
+}
+.support .support__form textarea::-moz-placeholder {
+  font-size: 1em !important;
+  color: #333333;
+}
+.support .support__form textarea:-ms-input-placeholder {
+  font-size: 1em !important;
+  color: #333333;
+}
+.support .support__form textarea::-ms-input-placeholder {
+  font-size: 1em !important;
+  color: #333333;
+}
+.support .support__form textarea::placeholder {
+  font-size: 1em !important;
+  color: #333333;
+}
+.support .support__form .checkbox {
+  margin-bottom: 73px;
+  cursor: pointer;
+}
+.support .support__form .checkbox .checkbox__input {
+  display: none;
+}
+.support .support__form .checkbox .checkbox__input:checked + .checkbox__label::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.support .support__form .checkbox .checkbox__label {
+  font-size: 1em;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.support .support__form .checkbox .checkbox__label::before {
+  content: "";
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 24px;
+          flex: 0 0 24px;
+  height: 24px;
+  background-color: #fff;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+.support .support__form .checkbox .checkbox__label::after {
+  -webkit-transition: -webkit-transform 0.5s ease 0s;
+  transition: -webkit-transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  background-color: aqua;
+  border-radius: 4px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+.support .support__form button:last-child {
+  height: 43px;
+  background: #FFD966;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #1E1E1E;
+  padding-top: 72px;
+  padding-bottom: 72px;
+  height: 426px;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  color: #FFFFFF;
+}
+.footer .footer__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 20.0347222222vw;
+  max-width: 425px;
+  height: 283px;
+}
+.footer .footer__info h1 {
+  font-weight: 500;
+  font-size: 2.5em;
+  line-height: 120%;
+  margin-bottom: 24px;
+}
+.footer .footer__info p {
+  padding-right: 1.1805555556vw;
+  margin-bottom: 32px;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 130%;
+}
+.footer .footer__info button {
+  height: 47px;
+  width: 100%;
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 120%;
+  color: #000000;
+  background: #FFD966;
+}
+.footer .footer__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 20.0347222222vw;
+  max-width: 318px;
+  height: 283px;
+}
+.footer .footer__contacts h1 {
+  font-weight: 500;
+  font-size: 2.5em;
+  line-height: 120%;
+  margin-bottom: 14px;
+}
+.footer .footer__contacts .contacts__info {
+  margin-bottom: 5px;
+  padding-left: 0.8333333333vw;
+}
+.footer .footer__contacts .contacts__info .info {
+  font-size: 0.875em;
+}
+.footer .footer__contacts .contacts__info .info p:nth-child(1) {
+  font-weight: 500;
+  line-height: 130%;
+  color: #FFFFFF;
+  margin-bottom: 4px;
+}
+.footer .footer__contacts .contacts__info .info p:nth-child(2) {
+  font-weight: 400;
+  line-height: 130%;
+  color: #BFBFBF;
+}
+.footer .footer__contacts .contacts__info .info:not(:last-child) {
+  margin-bottom: 16px;
+}
+.footer .footer__contacts .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer .footer__contacts .social-media button {
+  display: block;
+  width: 48px;
+  height: 48px;
+}
+.footer .footer__contacts .social-media button img {
+  margin: auto;
 }
