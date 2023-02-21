@@ -1568,7 +1568,6 @@ button#count3 {
 }
 .story-table_card_subscription {
   font-size: 16px;
-<<<<<<< HEAD
   line-height: 20px;
   color: #1F1F1F;
   list-style: none;
@@ -1857,8 +1856,6 @@ button#count3 {
 }
 .footer .footer__contacts .social-media button img {
   margin: auto;
-=======
   width: 600px;
   color: #1f1f1f;
->>>>>>> cd724c5677c05f023e564244d0be5f924199f53d
 }

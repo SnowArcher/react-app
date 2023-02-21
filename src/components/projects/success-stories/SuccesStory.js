@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Modal from "../Modal";
 import "./../../../scss/blocks/_successStories.scss";
+import "./../../../scss/blocks/_successStoryItem.scss";
 import TextTruncate from 'react-text-truncate';
 
 function SuccessStory ({src,title,date,description,srcBig}) {
@@ -17,8 +18,8 @@ function SuccessStory ({src,title,date,description,srcBig}) {
                             text={title}
                     />
                     <TextTruncate
-                            line={3}
-                            element="h3"
+                            line={4}
+                            element="p"
                             truncateText="…"
                             text={description}
                     />
@@ -27,7 +28,7 @@ function SuccessStory ({src,title,date,description,srcBig}) {
 
                 <Modal active={modalActive} setActive={setModalActive}>
                 <div className="success-story">
-                <img src={srcBig} className="story_img" alt="story"/>
+                <img src={srcBig} className="success-story_img" alt="story"/>
                 <div className="success-story__description">
                     <h3>{title}</h3>
                     <p>{description}</p>

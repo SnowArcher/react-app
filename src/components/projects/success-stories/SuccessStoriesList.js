@@ -1,7 +1,7 @@
 const stories = [
     {
-        src: "./../../img/img_current/need1.png",
-        srcBig: "./../../img/img_current/need1_big.png",
+        src: "./../../img/img_success/story1.png",
+        srcBig: "./../../img/img_success/story1_big.png",
         id: 1,
         title: 'Подарунки для дітей на новорічні свята',
         description: `Знаєте, іноді наші волонтери стають справжніми чарівниками.
@@ -11,8 +11,8 @@ const stories = [
         date: "20 січня 2023"
     },
     {
-        src: "./../../img/img_current/need1.png",
-        srcBig: "./../../img/img_current/need1_big.png",
+        src: "./../../img/img_success/story2.png",
+        srcBig: "./../../img/img_success/story2_big.png",
         id: 1,
         title: 'Подарунки для дітей на новорічні свята',
         description: `Наша команда має на меті допомогти тваринам, що залишилися без дому внаслідок війни.
@@ -27,8 +27,8 @@ const stories = [
         date: "9 січня 2023"
     },
     {
-        src: "./../../img/img_current/need1.png",
-        srcBig: "./../../img/img_current/need1_big.png",
+        src: "./../../img/img_success/story3.png",
+        srcBig: "./../../img/img_success/story3_big.png",
         id: 1,
         title: 'Допомога малобільним людям',
         description: `Коли ми вперше поїхали до Купянська, ми познайомилися з старенькою жіночкою Тамарою.

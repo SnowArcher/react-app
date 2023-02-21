@@ -11,17 +11,12 @@
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.43.1",
     "react-router-dom": "^6.8.1",
-<<<<<<< HEAD
-    "react-scripts": "5.0.1",
-    "sass": "^1.58.3",
     "swiper": "^9.0.5",
-=======
     "react-router-hash-link": "^2.4.3",
     "react-scripts": "^5.0.1",
     "react-text-truncate": "^0.19.0",
     "sass": "^1.58.3",
     "use-react-router-breadcrumbs": "^4.0.1",
->>>>>>> cd724c5677c05f023e564244d0be5f924199f53d
     "web-vitals": "^2.1.4"
   },
   "scripts": {
