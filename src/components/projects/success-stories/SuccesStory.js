@@ -1,7 +1,5 @@
 import { useState } from "react";
 import Modal from "../Modal";
-import "./../../../scss/blocks/_successStories.scss";
-import "./../../../scss/blocks/_successStoryItem.scss";
 import TextTruncate from 'react-text-truncate';
 
 function SuccessStory ({src,title,date,description,srcBig}) {

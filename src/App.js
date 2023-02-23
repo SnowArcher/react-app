@@ -5,7 +5,7 @@ import NavMenu from './components/NavMenu';
 import DocsReports from './components/about-fund/docs-reports/DocsReports';
 
 import OurTeam from './components/about-fund/team-partners/OurTeam';
-//import Footer from './components/Footer';
+import Footer from './components/Footer';
 //import Contacts from './components/contacts/Contacts';
 import CurrentNeeds from './components/projects/current-projects/CurrentNeeds';
 import MissionStory from "./components/about-fund/mission-story/MissionStory";
@@ -26,14 +26,12 @@ function App() {
             <Route path="/" element={<Landing />}/> 
             <Route path="/docs" element={<DocsReports />} />
             <Route path="/story" element={<MissionStory />} />
-            {/* <Route path="/story" element={<SuccesStory />} /> */}
             <Route path="/team" element={<OurTeam />} />
             <Route path="/current" element={<CurrentNeeds />} />
-            {/* <Route path="/contacts" element={<Contacts />} />*/}
-            
+            {/* <Route path="/contacts" element={<Contacts />} /> */}
             <Route path="/success_stories" element={<Stories />} /> 
           </Routes>
-          {/* <Footer /> */}
+          <Footer />
       </div>
     </BrowserRouter>
   );
