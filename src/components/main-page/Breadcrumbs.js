@@ -6,6 +6,7 @@ import Landing from "./Landing"
 import DocsReports from "./../about-fund/docs-reports/DocsReports"
 import MissionStory from "./../about-fund/mission-story/MissionStory"
 import OurTeam from "./../about-fund/team-partners/OurTeam"
+import Stories from "../projects/success-stories/Stories";
 
 const Breadcrumbs = () => {
   const routes = [
@@ -33,6 +34,11 @@ const Breadcrumbs = () => {
       path: "/team",
       element: <OurTeam />,
       breadcrumb: "Команда та партнери",
+    },
+    {
+      path: "/success_stories",
+      element: <Stories />,
+      breadcrumb: "Успішні історії",
     },
 
   ];

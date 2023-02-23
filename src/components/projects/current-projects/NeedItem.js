@@ -2,10 +2,10 @@ import { useState } from "react";
 import Modal from "../Modal";
 import "./../../../scss/blocks/_need.scss"
 import { HashLink as Link } from "react-router-hash-link";
-//import TextTruncate from 'react-text-truncate'; 
+import TextTruncate from 'react-text-truncate'; 
 
 
-function NeedItem ({src,title,target,description,longDesc,srcBig}) {
+function NeedItem ({src,title,target,description,srcBig}) {
      const [modalActive, setModalActive] = useState(false);
     return (
         <>
@@ -13,10 +13,19 @@ function NeedItem ({src,title,target,description,longDesc,srcBig}) {
             <div className="needs_card">
                 <img src={src} alt="need-item"/>
                 <div className="needs__description">
-                    <h3>{title}</h3>
+                    <TextTruncate
+                        line={4}
+                        element="h3"
+                        truncateText="…"
+                        text={title}
+                    />
                     <h4>{target}</h4>
-                    <p className="tocut">{description}</p>
-                                      
+                    <TextTruncate
+                        line={5}
+                        element="p"
+                        truncateText="…"
+                        text={description}
+                    />
                 </div>
                 <div className="needs__cards_button">
                 <Link to="/#ancore"><span>Допомогти</span></Link>
@@ -29,7 +38,7 @@ function NeedItem ({src,title,target,description,longDesc,srcBig}) {
                 <div className="need__description">
                     <h3>{title}</h3>
                     <h4>{target}</h4>
-                    <p>{longDesc}</p>
+                    <p>{description}</p>
                     <div className="need_button">
                         <Link to="/#ancore"><span>Допомогти</span></Link>
                     </div>
