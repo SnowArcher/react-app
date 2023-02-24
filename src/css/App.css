@@ -1480,115 +1480,6 @@ button#count3 {
   color: #666666;
 }
 
-.subhead-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 80px;
-  font-family: "Roboto", sans-serif;
-}
-.subhead-info_title {
-  font-size: 40px;
-  font-weight: 700;
-  color: #000000;
-}
-.subhead-info_description {
-  font-size: 16px;
-  width: 494px;
-  text-align: center;
-  margin: 25px;
-  color: #1f1f1f;
-}
-
-.programs_table {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 33px;
-  margin: 40px 0;
-}
-.programs_table_card {
-  width: 320px;
-  font-family: "Roboto", sans-serif;
-}
-.programs_table_card_caption {
-  font-size: 20px;
-  font-weight: 700;
-  color: #000000;
-  text-align: center;
-  padding: 15px;
-}
-.programs_table_card_subscription {
-  font-size: 16px;
-  text-align: center;
-  color: #1f1f1f;
-}
-
-.story-table {
-  gap: 32px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 40px 0;
-  font-family: "Roboto", sans-serif;
-}
-.story-table_card {
-  gap: 32px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-.story-table_card_subscription {
-  font-size: 16px;
-  line-height: 20px;
-  color: #1F1F1F;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.story__description ul li {
-  padding-bottom: 1.1vw;
-}
-.story__description span {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  color: #1F1F1F;
-}
-.story__description_wrapper {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin-left: 2.2vw;
-}
-
 .support {
   max-width: 1440px;
   height: 837px;
@@ -1856,6 +1747,96 @@ button#count3 {
 }
 .footer .footer__contacts .social-media button img {
   margin: auto;
+}
+
+.subhead-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 80px;
+  font-family: "Roboto", sans-serif;
+}
+.subhead-info_title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #000000;
+}
+.subhead-info_description {
+  font-size: 16px;
+  width: 494px;
+  text-align: center;
+  margin: 25px;
+  color: #1f1f1f;
+}
+
+.programs_table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 33px;
+  margin: 40px 0;
+}
+.programs_table_card {
+  width: 320px;
+  font-family: "Roboto", sans-serif;
+}
+.programs_table_card_caption {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+  padding: 15px;
+}
+.programs_table_card_subscription {
+  font-size: 16px;
+  text-align: center;
+  color: #1f1f1f;
+}
+
+.story-table {
+  gap: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 40px 0;
+  font-family: "Roboto", sans-serif;
+}
+.story-table_card {
+  gap: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.story-table_card_subscription {
+  font-size: 16px;
   width: 600px;
   color: #1f1f1f;
 }
