@@ -18,7 +18,7 @@ function CurrentNeeds() {
                     <img src="../img/arrow_h.svg" alt="arrow_h"/>
                 </button>
             </Link>
-        </div>
+            </div>
         </div>
     );
 }
