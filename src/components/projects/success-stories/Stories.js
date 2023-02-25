@@ -1,6 +1,7 @@
 import SuccessStory from "./SuccesStory";
 import {stories} from "./SuccessStoriesList";
-import Slider from "./slider/Slider"
+
+
 
 
 function Stories () {
