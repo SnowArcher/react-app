@@ -1,5 +1,7 @@
 import SuccessStory from "./SuccesStory";
-import {stories} from "./SuccessStoriesList"
+import {stories} from "./SuccessStoriesList";
+
+
 
 
 function Stories () {
@@ -18,7 +20,8 @@ function Stories () {
                 }) 
             }
             </ul>
-        </div>    
+     
+        </div>
     </>
     );
 }

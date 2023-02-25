@@ -1,0 +1,25 @@
+
+.swiper {
+    width: 392px !important;
+    height: 440px;
+}
+.swiper-slide{
+    width: 392px !important;
+    height: 400px;
+}
+.swiper-button-prev::after, .swiper-button-next::after {
+    
+    color: black;
+    font-size: 20px !important;
+
+}
+.swiper-button-prev, .swiper-button-next {
+    top: 420px !important;
+}
+.swiper-pagination {
+    bottom: 10px !important;
+    span{
+        background-color: black !important;
+    }
+    
+}
