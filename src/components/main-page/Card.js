@@ -14,7 +14,7 @@ function Card() {
                 <div className="card-description">
                     <p>Now there are no windows in the room, the walls are destroyed - this makes the work of the headquarters and the children's center impossible.</p>
                 </div>
-                <button className="cardDonateBtn">
+                <button className="cardDonateBtn" onClick={() => {document.getElementById("donate").scrollIntoView()}}>
                     <span>Donate</span>
                 </button>
             </div>
