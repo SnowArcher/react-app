@@ -4,7 +4,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
 * {
   -webkit-box-sizing: border-box;
@@ -1939,12 +1938,13 @@ button#count3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 80px;
-  font-family: "Roboto", sans-serif;
+  margin: 40px 0 0;
+  font-family: "Montserrat", sans-serif;
+  line-height: 20.8px;
 }
 .subhead-info_title {
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 500;
   color: #000000;
 }
 .subhead-info_description {
@@ -1964,16 +1964,20 @@ button#count3 {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 33px;
-  margin: 40px 0;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 40px 0 100px;
+  line-height: 20.8px;
 }
 .programs_table_card {
-  width: 320px;
-  font-family: "Roboto", sans-serif;
+  width: 392px;
+  font-family: "Montserrat", sans-serif;
+  margin: 0 10px 10px;
 }
 .programs_table_card_caption {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 500;
   color: #000000;
   text-align: center;
   padding: 15px;
@@ -1997,8 +2001,9 @@ button#count3 {
       align-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 40px 0;
-  font-family: "Roboto", sans-serif;
+  margin: 0 0 100px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 20.8px;
 }
 .story-table_card {
   gap: 32px;
@@ -2012,6 +2017,26 @@ button#count3 {
       flex-wrap: wrap;
 }
 .story-table_card_subscription {
+  font-size: 16px;
+  width: 600px;
+  color: #1f1f1f;
+}
+.story-table_card-centre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 32px;
+  text-align: center;
+  margin: 30px 0;
+}
+.story-table_card-centre_subscription {
   font-size: 16px;
   width: 600px;
   color: #1f1f1f;
@@ -2096,4 +2121,144 @@ button#count3 {
 .breadcrumbs div:last-child {
   font-weight: 500;
   pointer-events: none;
+}
+
+.contact-page {
+  margin: 0 100px;
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  margin: 72px 0;
+  text-align: center;
+}
+
+.conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 72x 0;
+}
+.conteiner_connection {
+  color: #000000;
+}
+.conteiner_connection_table {
+  width: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  margin: 24px 14px;
+}
+.conteiner_connection_table_card {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+.conteiner_connection_table_card_name {
+  font-weight: 500;
+}
+.conteiner_connection_table_card_footnote {
+  color: #4D4D4D;
+}
+.conteiner_connection_icon-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.conteiner_connection_icon-link > img {
+  padding: 15px;
+}
+
+.request-conteiner {
+  font-family: "Montserrat", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 72px 0;
+}
+.request-conteiner_info {
+  width: 586px;
+}
+.request-conteiner_info_title {
+  font-size: 40px;
+  font-weight: 500;
+}
+.request-conteiner_info_description {
+  font-size: 16px;
+  margin: 24px 0;
+}
+.request-conteiner_form {
+  width: 586px;
+  font-size: 16px;
+}
+.request-conteiner_form_text-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.request-conteiner_form_text-field > input {
+  margin: 0 0 24px;
+  padding: 13.5px 0 13.5px 16px;
+  border-bottom: 2px solid #6e6e6e;
+}
+.request-conteiner_form_text-field > textarea {
+  font-size: 17px;
+  padding: 13.5px 0 13.5px 16px;
+  border: none;
+  border-bottom: 2px solid #6e6e6e;
+}
+.request-conteiner_form_capture {
+  font-size: 12px;
+  color: #808080;
+  padding: 4px 0 0 16px;
+}
+.request-conteiner_form_button {
+  margin: 54.5px 0;
+  padding: 12px 0;
+  background-color: #FFD966;
+  width: 100%;
+}
+.request-conteiner_form_agree {
+  margin: 38px 0 0 0;
+}
+.request-conteiner_form_agree_checkbox {
+  margin: 0 15px 0 0;
+  border: none;
+  height: 18px;
+  width: 18px;
+  border-radius: 2px;
+  border: none;
 }
