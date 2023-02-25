@@ -92,7 +92,7 @@ button#eur {
 .rate__button:not(:last-child) {
     border-right: none;
 }
-.rate__button:active {
+.rate__button.active {
     background: rgba(31, 30, 27, 0.1);
     > img {
         display: block;
@@ -134,11 +134,15 @@ button#count3 {
     &:hover {
         background-color: rgba(31, 30, 27, 0.1);
     }
+    &.error {
+        border-color: red;
+        color: red;
+    }
 }
 .count__button:not(:last-child) {
     border-right: none;
 }
-.count__button:active {
+.count__button.active {
     background: rgba(31, 30, 27, 0.1);
     > img {
         display: block;
@@ -167,11 +171,16 @@ button#count3 {
             background: rgba(255, 255, 255, 0.43);
             border-bottom: 1px solid #0275ED;
         }
+        &.error {
+            color: red;
+            border: 1px solid red;
+        }
     }
     sup {
         width: calc(498 / 1440) * 100vw;
         height: 20px;
         padding: 4px (calc(16 / 1440) * 100vw) 0px;
+        color: red;
     }
     .btn-credit-card {
         margin-top: 28px;

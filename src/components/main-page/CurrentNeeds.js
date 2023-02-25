@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Card from './Card'
 function CurrentNeeds() {
     return (
@@ -11,10 +12,12 @@ function CurrentNeeds() {
                 <Card />
             </div>
             <div className="allCurrentNeeds">
-            <button className="btnAllNeeds">
-                <span>All current needs</span>
-                <img src="../img/arrow_h.svg" alt="arrow_h"/>
-            </button>
+            <Link to="/current">
+                <button className="btnAllNeeds">
+                    <span>All current needs</span>
+                    <img src="../img/arrow_h.svg" alt="arrow_h"/>
+                </button>
+            </Link>
         </div>
         </div>
     );
