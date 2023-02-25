@@ -1,17 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-
 .subhead-info {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin: 80px;
-    font-family: "Roboto", sans-serif;
+    margin: 40px 0 0;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 20.8px;
 
     &_title {
         font-size: 40px;
-        font-weight: 700;
+        font-weight: 500;
         color: #000000;
     }
 
@@ -21,6 +19,7 @@
         text-align: center;
         margin: 25px;
         color: #1f1f1f;
+        
     }
 }
 
@@ -28,16 +27,18 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 33px;
-    margin: 40px 0;
+    justify-content: space-evenly;
+    margin: 40px 0 100px;
+    line-height: 20.8px;
 
     &_card {
-        width: 320px;
-        font-family: "Roboto", sans-serif;
+        width: 392px;
+        font-family: 'Montserrat', sans-serif;
+        margin: 0 10px 10px;
         
         &_caption {
             font-size: 20px;
-            font-weight: 700;
+            font-weight: 500;
             color: #000000;;
             text-align: center;
             padding: 15px;
@@ -57,8 +58,9 @@
     flex-direction: column;
     align-content: center;
     flex-wrap: wrap;
-    margin: 40px 0;
-    font-family: "Roboto", sans-serif;
+    margin: 0 0 100px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 20.8px;
 
     &_card {
         gap: 32px;
@@ -71,6 +73,21 @@
             width: 600px;
             color: #1f1f1f;
         }
+    }
+
+    &_card-centre {
+        display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 32px;
+                text-align: center;
+                margin: 30px 0; 
+
+            &_subscription {
+            font-size: 16px;
+            width: 600px;
+            color: #1f1f1f;
+         }
     }
 }
 

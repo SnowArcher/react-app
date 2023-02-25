@@ -6,7 +6,7 @@ import DocsReports from './components/about-fund/docs-reports/DocsReports';
 
 import OurTeam from './components/about-fund/team-partners/OurTeam';
 import Footer from './components/Footer';
-//import Contacts from './components/contacts/Contacts';
+import Contacts from './components/contacts/Contacts';
 import CurrentNeeds from './components/projects/current-projects/CurrentNeeds';
 import MissionStory from "./components/about-fund/mission-story/MissionStory";
 import Breadcrumbs from './components/main-page/Breadcrumbs';
@@ -28,7 +28,7 @@ function App() {
             <Route path="/story" element={<MissionStory />} />
             <Route path="/team" element={<OurTeam />} />
             <Route path="/current" element={<CurrentNeeds />} />
-            {/* <Route path="/contacts" element={<Contacts />} /> */}
+            <Route path="/contacts" element={<Contacts />} /> 
             <Route path="/success_stories" element={<Stories />} /> 
           </Routes>
           <Footer />
