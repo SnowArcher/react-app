@@ -412,6 +412,7 @@ body {
 .allCurrentNeeds {
   position: relative;
   margin-top: 64px;
+  height: 60px;
   padding-bottom: 100px;
 }
 
@@ -1714,6 +1715,7 @@ button#count3 {
   border-bottom: 1px solid #333333;
   max-width: 496px;
   height: 48px;
+  font-size: 1em !important;
 }
 .support .support__form input::-webkit-input-placeholder {
   font-size: 1em !important;
@@ -1747,6 +1749,7 @@ button#count3 {
   height: 173px;
   padding: 9.5px 1.1111111111vw;
   margin-bottom: 44px;
+  font-size: 1em !important;
 }
 .support .support__form textarea::-webkit-input-placeholder {
   font-size: 1em !important;
@@ -1769,53 +1772,9 @@ button#count3 {
   color: #333333;
 }
 .support .support__form .checkbox {
-  margin-bottom: 73px;
-  cursor: pointer;
-}
-.support .support__form .checkbox .checkbox__input {
-  display: none;
-}
-.support .support__form .checkbox .checkbox__input:checked + .checkbox__label::after {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-.support .support__form .checkbox .checkbox__label {
-  font-size: 1em;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-}
-.support .support__form .checkbox .checkbox__label::before {
-  content: "";
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 24px;
-          flex: 0 0 24px;
-  height: 24px;
-  background-color: #fff;
-  border-radius: 4px;
-  margin-right: 10px;
-}
-.support .support__form .checkbox .checkbox__label::after {
-  -webkit-transition: -webkit-transform 0.5s ease 0s;
-  transition: -webkit-transform 0.5s ease 0s;
-  transition: transform 0.5s ease 0s;
-  transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
-  content: "";
-  width: 16px;
-  height: 16px;
-  position: absolute;
-  top: 4px;
-  left: 4px;
-  background-color: aqua;
-  border-radius: 4px;
-  -webkit-transform: scale(0);
-          transform: scale(0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .support .support__form button:last-child {
   height: 43px;
@@ -2096,4 +2055,69 @@ button#count3 {
 .breadcrumbs div:last-child {
   font-weight: 500;
   pointer-events: none;
+}
+
+.some-stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1440px;
+  padding-left: 6.9444444444vw;
+  padding-right: 6.9444444444vw;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  color: #000000;
+}
+.some-stats h1 {
+  margin-top: 134px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 2.5em;
+  line-height: 120%;
+  margin-bottom: 72px;
+}
+.some-stats .some-stats__content {
+  max-width: 1240px;
+}
+.some-stats .some-stats__content img {
+  height: 100%;
+  width: 100%;
+}
+.some-stats .all-stats {
+  position: relative;
+  margin-top: 72px;
+  margin-bottom: 100px;
+  height: 60px;
+}
+.some-stats .all-stats .btnAllStats {
+  position: absolute;
+  right: 0%;
+  width: 296px;
+  height: 60px;
+  border: 1px solid #000000;
+  border-radius: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.some-stats .all-stats .btnAllStats img {
+  padding-left: 0.5555555556vw;
+}
+.some-stats .all-stats .btnAllStats:hover {
+  background-color: rgba(31, 30, 27, 0.1);
 }

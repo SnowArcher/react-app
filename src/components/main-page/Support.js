@@ -33,7 +33,7 @@ function Support() {
                     type="text" 
                     placeholder="Your name"/>
                 <div>
-                    {errors?.name && <p>{errors?.name?.message || "Error"}</p>}
+                    {errors?.name && <sup>{errors?.name?.message || "Error"}</sup>}
                 </div>
                 <input name='email' {...register('email', {
                     required: 'Email is required',
@@ -44,13 +44,13 @@ function Support() {
                 })}
                     type="email" placeholder="Email"/>
                 <div>
-                    {errors?.email && <p>{errors?.email?.message || "Error"}</p>}
+                    {errors?.email && <sup>{errors?.email?.message || "Error"}</sup>}
                 </div>
                 <input type="tel"placeholder="Phone number"/>
                 <textarea placeholder="Message"></textarea>
                 <div className="checkbox">
                     <input id="formAgreement" type="checkbox" name="agreement" className="checkbox__input"/>  
-                    <label className="checkbox__label"><Link to="/privicy">Я погоджуюся з політикою конфіденційності</Link></label>
+                    <label className="checkbox__label"><Link to="/privicy"><span>Я погоджуюся з політикою конфіденційності</span></Link></label>
                 </div>
                 <button type="submit" disabled={!isValid}>
                     Send form

@@ -50,8 +50,8 @@ function NavMenu () {
                         </div>
                         <div className={`dropdown ${open2? 'active' : 'inactive'}`}>
                             <ul>
-                                <li><Link className="ref" to="/current">Current</Link></li>
-                                <li><Link className="ref" to="/success_stories">Previous</Link></li>
+                                <li><Link className="ref" to="/current"><span>Current</span></Link></li>
+                                <li><Link className="ref" to="/success_stories"><span>Previous</span></Link></li>
                             </ul>
                         </div>
                     </li>
