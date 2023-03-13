@@ -1,0 +1,135 @@
+.succes-stories_main {
+    max-width: 1440px;
+    padding-left: calc(100 / 1440) * 100vw;
+    padding-right: calc(100 / 1440) * 100vw;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    color: #000000;
+    >h1 {
+        margin-top: 134px;
+        font-weight: 500;
+        font-size: 2.5em;
+        line-height: 120%;  
+        margin-bottom: 24px;
+    }
+    >p{
+        width: 521px;
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 130%;
+        margin-bottom: 48px;
+    }
+    .stories-content {
+        max-width: 1240px;
+        max-height: 591px;  
+        margin-bottom: 64px;
+        display: flex;
+        justify-content: space-around;
+        .story-card {
+            width: 392px;
+            max-height: 591px;
+            background: white;
+            cursor: pointer;
+            .story-card__content {
+                background: #ECECEC;
+                font-family: 'Montserrat', sans-serif;
+                font-style: normal; 
+                &.hovered {
+                    transform: scale(0.9);
+                    background-color: white;
+                }
+                h1 {
+                    font-weight: 600;
+                    font-size: 1.25em;
+                    line-height: 120%;
+                    color: #333333;
+                    margin-bottom: 12px;
+                }
+                p {
+                    font-weight: 400;
+                    font-size: 1em;
+                    line-height: 130%;
+                    color: #000000;
+                }
+                p:not(:last-child) {
+                    margin-bottom: 12px;
+                }
+                .story-card__slider {
+                    width: 392px;
+                    height: 356px;
+                    position: relative;
+                    .swiper {
+                        width: 392px;
+                        height: 356px;
+                    }
+                    .swiper-slide {
+                        background-color: red;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                        width: 392px;
+                        height: 300px;
+                    }
+                    .swiper-pagination {
+                        position: absolute;
+                        bottom: 0;
+                        height: 48px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .swiper-pagination-bullet {
+                        border: 1.5px solid #000000;
+                        width: 6px;
+                        height: 6px;
+                        background-color: white;
+                        opacity: 1;
+                    }
+                    .swiper-pagination-bullet-active {
+                        border: 1.5px solid #000000;
+                        background-color: #000000;
+                    }
+                    .btnNext {
+                        position: absolute;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        bottom: 0;
+                        right: 0;
+                        z-index: 10;
+                        width: 48px;
+                        height: 48px;
+                        border-radius: 50%;
+                        &:active {
+                            background-color: #FFE9A8;
+                        }
+                        &:not(:active):hover {
+                            background-color: rgba(31, 30, 27, 0.1);
+                        }
+                    }
+                    .btnPrev {
+                        position: absolute;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        bottom: 0;
+                        left: 0;
+                        z-index: 10;
+                        width: 48px;
+                        height: 48px;
+                        border-radius: 50%;
+                        &:active {
+                            background-color: #FFE9A8;
+                        }
+                        &:not(:active):hover {
+                            background-color: rgba(31, 30, 27, 0.1);
+                        }
+                    }
+                }
+            }
+        }  
+    }
+}

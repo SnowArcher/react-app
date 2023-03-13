@@ -4,7 +4,7 @@
     max-height: 2392px;
     padding-left: calc(100 / 1440) * 100vw;
     padding-right: calc(100 / 1440) * 100vw;
-    padding-top: 134px;
+    padding-top: 200px;
     margin-left: auto;
     margin-right: auto;
     font-family: 'Montserrat', sans-serif;
@@ -18,8 +18,6 @@
         color: #000000;
     }
     > p {
-        padding-left: calc(445.5 / 1440) * 100vw;
-        padding-right: calc(445.5 / 1440) * 100vw;
         text-align: center;
         font-weight: 400;
         font-size: 1em;
@@ -49,7 +47,7 @@
         font-size: 1em;
         line-height: 130%;
         color: #1F1F1F;
-        margin-bottom: 16px;
+        margin-bottom: 10px;
     }
 }
 .rate {
@@ -149,38 +147,44 @@ button#count3 {
     }
 }
 .donate-form {
-    > input {
-        width: calc(498 / 1440) * 100vw;
-        height: 56px;
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 1em;
-        line-height: 130%;
-        color: #333333;
-        border-radius: 4px 4px 0px 0px;
-        padding: 17.5px calc(16 / 1440) * 100vw;
-        border-bottom: 1px solid #333333;
-        &::placeholder {
-            opacity: 1;
+    .donate-form__input {
+        position: relative;
+        > input {
+            width: calc(498 / 1440) * 100vw;
+            height: 56px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1em;
+            line-height: 130%;
+            color: #333333;
+            border-radius: 4px 4px 0px 0px;
+            padding: 17.5px calc(16 / 1440) * 100vw;
+            border-bottom: 1px solid #333333;
+            &::placeholder {
+                opacity: 1;
+            }
+            &:focus::placeholder {
+                color: transparent;
+            }
+            &:hover {
+                background: rgba(255, 255, 255, 0.43);
+                border-bottom: 1px solid #0275ED;
+            }
+            &.error {
+                color: red;
+                border: 1px solid red;
+            }
         }
-        &:focus::placeholder {
-            color: transparent;
-        }
-        &:hover {
-            background: rgba(255, 255, 255, 0.43);
-            border-bottom: 1px solid #0275ED;
-        }
-        &.error {
+        sup {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: calc(498 / 1440) * 100vw;
+            height: 20px;
+            padding: 4px (calc(16 / 1440) * 100vw) 0px;
             color: red;
-            border: 1px solid red;
         }
-    }
-    sup {
-        width: calc(498 / 1440) * 100vw;
-        height: 20px;
-        padding: 4px (calc(16 / 1440) * 100vw) 0px;
-        color: red;
     }
     .btn-credit-card {
         margin-top: 28px;
@@ -228,6 +232,7 @@ button#count3 {
     }
 } 
 .help-photo {
+    height: 100%;
     > img {
         max-width: 599px;
         max-height: 601px;

@@ -27,30 +27,43 @@ function Support() {
                 <p>Будь яка підтримка дуже цінна. </p>
             </div>
             <form className="support__form" action="#" id="add-form" onSubmit={handleSubmit(onSubmit)}>
-                <input {...register("name", {
-                    required: "Поле має бути заповненим"
-                })} 
-                    type="text" 
-                    placeholder="Your name"/>
-                <div>
-                    {errors?.name && <sup>{errors?.name?.message || "Error"}</sup>}
+                <div className="form__container">
+                    <input className={`${errors.name? 'error' : ''}`}
+                        {...register("name", {
+                        required: "Поле має бути заповненим"
+                    })} 
+                        type="text" 
+                        placeholder="Ваше ім'я"/>
+                    <sup>{errors?.name?.message}</sup>
                 </div>
-                <input name='email' {...register('email', {
-                    required: 'Email is required',
-                    pattern: {
-                        value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                        message: "Invalid email address"
-                    }
-                })}
-                    type="email" placeholder="Email"/>
-                <div>
-                    {errors?.email && <sup>{errors?.email?.message || "Error"}</sup>}
+                <div className="form__container">
+                    <input className={`${errors.email? 'error' : ''}`}
+                        name='email' {...register('email', {
+                        required: 'Поле має бути заповненим',
+                        pattern: {
+                            value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                            message: "Некоректна адреса"
+                        }
+                    })}
+                        type="email" placeholder="Email"/>
+                    <sup>{errors?.email?.message}</sup>
                 </div>
-                <input type="tel"placeholder="Phone number"/>
-                <textarea placeholder="Message"></textarea>
+                <div className="form__container">
+                    <input type="tel" placeholder="Номер телефону"/>
+                    <sup>{errors?.phone?.message || <span>*Опціонально</span>}</sup>
+                </div>
+                <div className="form__container">
+                    <textarea 
+                        placeholder="Повідомлення"
+                        maxLength={500}
+                        cols={58}
+                        rows={5}
+                    ></textarea>
+                    <sup>{errors?.text?.message || <span>Не більше 500 символів</span>}</sup>
+                </div>
                 <div className="checkbox">
                     <input id="formAgreement" type="checkbox" name="agreement" className="checkbox__input"/>  
-                    <label className="checkbox__label"><Link to="/privicy"><span>Я погоджуюся з політикою конфіденційності</span></Link></label>
+                    <Link to="/privicy">Я погоджуюся з політикою конфіденційності</Link>
                 </div>
                 <button type="submit" disabled={!isValid}>
                     Send form

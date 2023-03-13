@@ -32,12 +32,12 @@
     "story": [
         {
             "photo": [
-                "url(img)",
-                "url(img)",
-                "url(img)",
-                "url(img)",
-                "url(img)",
-                "url(img)"
+                "../img/img_current/need1.png",
+                "../img/img_current/need2.png",
+                "../img/img_current/need3.png",
+                "../img/img_current/need4.png",
+                "../img/img_current/need3.png",
+                "../img/img_current/need2.png"
             ],
             "title": "Подарунки для дітей",
             "description": "Наш фонд збирає подарунки та товари для дітей з деокупованих територій - солодощі, канцтовари, іграшки, сезонний одяг та взуття.",
@@ -46,12 +46,12 @@
         },
         {
             "photo": [
-                "url(img)",
-                "url(img)",
-                "url(img)",
-                "url(img)",
-                "url(img)",
-                "url(img)"
+                "../img/img_current/need1.png",
+                "../img/img_current/need2.png",
+                "../img/img_current/need3.png",
+                "../img/img_current/need4.png",
+                "../img/img_current/need3.png",
+                "../img/img_current/need2.png"
             ],
             "title": "Видачу корму для людей, що прихистили безпритульних тварин",
             "description": "Ми регулярно закуповуємо корм і передаємо його родинам та міні притулкам, які дали прихисток безпритульним тваринам. ",
@@ -60,17 +60,142 @@
         },
         {
             "photo": [
-                "url(img)",
-                "url(img)",
-                "url(img)",
-                "url(img)",
-                "url(img)",
-                "url(img)"
+                "../img/img_current/need1.png",
+                "../img/img_current/need2.png",
+                "../img/img_current/need3.png",
+                "../img/img_current/need4.png",
+                "../img/img_current/need3.png",
+                "../img/img_current/need2.png"
             ],
             "title": "Допомога маломобільним людям",
             "description": "Наш команда разом із ГО “Фенікс13” передали ходунки для Тамари - літньої мешканки міста Куп’янськ. Це місто та його жителі постраждали і щодня продовжують страждати від російської військової агресії.",
             "fuullDescription": "Коли ми вперше поїхали до Купянська, ми познайомилися з старенькою жіночкою Тамарою.\nУсе своє життя вона провела на сцені, їздила з концертами разом із своїм колективом. І раптом, ця дієва творча людина опинилася у полоні жахливих обставин - війна, окупація, інвалідний візок...\nТамара дуже мріяла знову ходити. І озвучила своє бажання так:\n“Дівчатка, може ви ходунки якісь мені знайдете? Так хочеться на вулицю виходити, свіжим повітрям подихати!”\nНаша команда звернулася по допомогу і керівниця ГО “Фенікс13” Наталія Меркулова передала нам ходунки. Вже у наступну поїздку ми привезли їх Тамарі.\nДля Тамари це було справжнє диво.\nМи були щасливі, що змогли допомогти їй.",
             "date": "28 листопада 2022"
         }             
-    ]
+    ],
+    "bank": 
+        {
+            "uah": [
+                {
+                    "key": "Назва компанії",
+                    "content": "БЛАГОДІЙНА ОРГАНІЗАЦІЯ “БЛАГОДІЙНИЙ ФОНД “А- ХЕЛП УКРАЇНА””"
+                },
+                {
+                    "key": "IBAN код",
+                    "content": "UA643515330000026009005902082"
+                },
+                {
+                    "key": "Назва банку",
+                    "content": "АТ КБ \"ПриватБанк\""
+                },
+                {
+                    "key": "Адреса банку",
+                    "content": "Україна, м. Київ, вулиця Грушевського, будинок 1Д"
+                },
+                {
+                    "key": "Код ЄДРПОУ",
+                    "content": "44773154"
+                },
+                {
+                    "key": "SWIFT код",
+                    "content": "PBANUA2"
+                },
+                {
+                    "key": "Адреса компанії",
+                    "content": "Україна, м. Харків, вул. Валентинiвська, будинок 58А квартира 333-33"
+                }
+            ],
+            "eur": [
+                {
+                    "key": "Назва компанії",
+                    "content": "CHARITABLE ORGANIZATION “CHARITY FUND “A-HELP UKRAINE””"
+                },
+                {
+                    "key": "IBAN код",
+                    "content": "UA193515330000026000005903392"
+                },
+                {
+                    "key": "Назва банку",
+                    "content": "SC CB \"PRIVATBANK\""
+                },
+                {
+                    "key": "Адреса банку",
+                    "content": "Ukraine, Kyiv, Hrushevsky Street, building 1D"
+                },
+                {
+                    "key": "Код ЄДРПОУ",
+                    "content": "44773154"
+                },
+                {
+                    "key": "SWIFT код",
+                    "content": "PBANUA2"
+                },
+                {
+                    "key": "Адреса компанії",
+                    "content": "Ukraine, Kharkiv, str. Valentynivska, building 58A, apartment 333-33"
+                },
+                {
+                    "key": "Банк кореспондент",
+                    "content": "Commerzbank AG"
+                },
+                {
+                    "key": "Адреса банку кореспондента",
+                    "content": "Frankfurt am Main, Germany"
+                },
+                {
+                    "key": "Рахунок в банку кореспонденті",
+                    "content": "400886700401"
+                },
+                {
+                    "key": "SWIFT код банку кореспондента",
+                    "content": "COBADEFF"
+                }
+            ],
+            "usd": [
+                {
+                    "key": "Назва компанії",
+                    "content": "CHARITABLE ORGANIZATION “CHARITY FUND “A-HELP UKRAINE””"
+                },
+                {
+                    "key": "IBAN код",
+                    "content": "UA433515330000026001035904638"
+                },
+                {
+                    "key": "Назва банку",
+                    "content": "SC CB \"PRIVATBANK\""
+                },
+                {
+                    "key": "Адреса банку",
+                    "content": "Ukraine, Kyiv, Hrushevsky Street, building 1D"
+                },
+                {
+                    "key": "Код ЄДРПОУ",
+                    "content": "44773154"
+                },
+                {
+                    "key": "SWIFT код",
+                    "content": "PBANUA2"
+                },
+                {
+                    "key": "Адреса компанії",
+                    "content": "Ukraine, Kharkiv, str. Valentynivska, building 58A, apartment 333-33"
+                },
+                {
+                    "key": "Банк кореспондент",
+                    "content": "JP Morgan Chase Bank"
+                },
+                {
+                    "key": "Адреса банку кореспондента",
+                    "content": "New York ,USA"
+                },
+                {
+                    "key": "Рахунок в банку кореспонденті",
+                    "content": "001-1-000080"
+                },
+                {
+                    "key": "SWIFT код банку кореспондента",
+                    "content": "CHASUS33"
+                }
+            ]
+        }
 }

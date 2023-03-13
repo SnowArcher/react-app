@@ -35,17 +35,17 @@ function Footer() {
                             <img src="../img/footer/facebook.svg" alt='social' />
                         </button>
                     </a>
-                    <a href='https://uk-ua.facebook.com/' target="_blank" rel="noopener noreferrer">
+                    <a href='https://www.instagram.com/' target="_blank" rel="noopener noreferrer">
                         <button>
                             <img src="../img/footer/instagram.svg" alt='social'/>
                         </button>
                     </a>
-                    <a href='https://uk-ua.facebook.com/' target="_blank" rel="noopener noreferrer">
+                    <a href='https://web.telegram.org/' target="_blank" rel="noopener noreferrer">
                         <button>
                             <img src="../img/footer/telegram.svg" alt='social'/>
                         </button>
                     </a>
-                    <a href='https://uk-ua.facebook.com/' target="_blank" rel="noopener noreferrer">
+                    <a href='https://www.viber.com/' target="_blank" rel="noopener noreferrer">
                         <button>
                             <img src="../img/footer/viber.svg" alt='social'/>
                         </button>

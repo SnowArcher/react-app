@@ -26,18 +26,21 @@
     justify-content: space-between;
 }
 .card {
+    cursor: pointer;
     max-width: 286px;
     height: 592px;
     background-color: white;
 }
 .card__content {
+    
     position: relative;
     z-index: 1;
     height: 100%;
     background-color:#ECECEC;
 
 }
-.card__content:hover {
+.card__content.hovered {
+    cursor: pointer;
     transform: scale(0.9);
     background-color: white;
 }

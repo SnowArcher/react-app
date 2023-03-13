@@ -3,10 +3,10 @@ function Hero() {
     return (
         <header className="hero">
             <div className="hero__info">
-                <h1>Help Ukranian People</h1>
-                <p>A-help is a revolutionary charity product that helps those in need by providing essential goods and services. With A-help, you can make a difference in the lives of people who are struggling to make ends meet. </p>
+                <h1>Допоможіть постраждалим від війни</h1>
+                <p>Війна застала нас у рідному Харкові. Ми на власні очі бачимо страждання та біль людей. Тому, ми створили благодійний фонд "А-ХЕЛП УКРАЇНА і тепер допомогаємо людям.<br />Долучайся і ти."</p>
                 <button className="btnDonate" onClick={() => {document.getElementById("donate").scrollIntoView()}}>
-                        <span>Donate</span>
+                        <span>Допомогти</span>
                         <img src="../img/arrow_h.svg" alt="arrow" />
                 </button>
             </div>

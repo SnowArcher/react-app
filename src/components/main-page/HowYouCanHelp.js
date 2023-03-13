@@ -2,52 +2,6 @@ import React from "react";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 
-// import { useState , useEffect} from "react";
-
-// const useValidation = (value, validations) => {
-//     const [isEmpty, setEmpty] = useState(true);
-//     const [minLength, setMinLength] = useState(false);
-//     useEffect(() => {
-//         for (const validation in validations) {
-//             switch (validation) {
-//                 case 'minLength':
-//                     value.length < validations[validation] ? setMinLength(true) : setMinLength(false);
-//                     break;
-//                 case 'isEmpty':
-//                     value? setEmpty(false) : setEmpty(true);
-//                     break;
-//                 default:
-//             }
-//         }
-//     }, [value]);
-
-//     return {
-//         isEmpty,
-//         minLength
-//     }
-// }
-
-// const useInput = (initialValue, validations) => {
-//     const [value, setValue] = useState(initialValue)
-//     const [isDirty, setDirty] =useState(false);
-//     const valid = useValidation(value, validations)
-//     const onChange = (e) => {
-//         setValue(e.target.value)
-//     }
-
-//     const onBlur = (e) => {
-//         setDirty(true);
-//     }
-
-//     return {
-//         value,
-//         onBlur,
-//         onChange,
-//         isDirty,
-//         ...valid
-//     }
-// }
-
 function HowYouCanHelp() {
     const [eur, setEur] = useState(false);
     const [usd, setUsd] = useState(false);
@@ -59,13 +13,11 @@ function HowYouCanHelp() {
         }
         document.getElementById(id).classList.toggle("active");
     }
-    // const donate = useInput('', {isEmpty: true, minLength: 3});
     const {
         register,
         handleSubmit,
         reset,
         setValue,
-        formState,
         formState: {
             errors,
             isValid
@@ -74,23 +26,21 @@ function HowYouCanHelp() {
         mode: "onBlur"
     });
     const onSubmit = data => {
-        console.log(data);
-        alert(data);
+        alert(JSON.stringify(data));
         reset();
     }
-    React.useEffect(() => {
-        console.log("useEffect", formState.errors);
-    }, [formState]);
     return (
-        <div className="how-you-can-help">
-            <h1 id="ancore">How you can help?</h1>
-            <p>You can support us in several ways, we will be grateful for any help. This will make our work better and more efficient.</p>
-            <div className="help-content" id='donate'>
+        <div className="how-you-can-help" id='donate'>
+            <h1 id="ancore">Як ви можете допомогти?</h1>
+            <p>Підтримати нас можна кількома способами, ми будемо вдячні за<br />будь-яку допомогу. Це зробить нашу роботу кращою та<br />ефективнішою.</p>
+            <div className="help-content">
                 <div className="help-card">
-                    <h1>You can make a donation</h1>
-                    <p>You will save the future.</p>
-                    <p>Shelling overhead, destruction of homes, loss of work, closed shops and pharmacies. Ruined plans for the future and small children in arms. Old people who can't leave their homes and an incredible number of animals that ended up on the street.</p>
-                    <p>You can help them by donating:</p>
+                    <h1>Ви можете зробити донат</h1>
+                    <p>Ви врятуєте майбутнє.</p>
+                    <p>Обстріли над головою, руйнування житла, втрата роботи, зачинені магазини та аптеки.</p>
+                    <p>Зруйновані плани на майбутнє та маленькі діти на руках.</p>
+                    <p>Старі люди, які не можуть поїхати, та неймовірна кількість тварин, що опинилася на вулиці.</p>
+                    <p>Ви можете допомогти їм зробивши донат:</p>
                     <div className="rate">
                             <button className={`rate__button ${uah? 'active' : ''}`} id="uah" onClick={() => {setUah(true);setUsd(false);setEur(false)}}>
                                 <img src="../img/rate_arrow.svg" alt="arrow"/>
@@ -129,37 +79,30 @@ function HowYouCanHelp() {
                         </button>
                     </div>
                     <form className="donate-form" onSubmit={handleSubmit(onSubmit)}>
-                        <input className={`${errors.donateInput? 'error' : ''}`}
-                            {...register("donateInput", {
-                                required: {
-                                    value: true, 
-                                    message: 'Error1'
-                                },
-                                maxLength: {
-                                    value: 10,
-                                    message: 'Error2'
-                                },
-                                valueAsNumber: {
-                                    value: true,
-                                    message: 'Error3'
-                                },
-                                validate: value => value >= 1 || 'Error 4'
-                            })} 
-                            name = "donateInput"
-                            type = "text"
-                            placeholder="Offer a different amount" 
-                            id="donate-input"
-                            // name='donate' 
-                            // value={donate.value}
-                            // onChange={e => donate.onChange(e)}
-                            // onBlur={e => donate.onBlur(e)}
-                        />
-                        {/* <sup>{(donate.isDirty && donate.isEmpty) `Введіть суму`}</sup> */}
-                        {errors?.donateInput && <sup>{errors?.donateInput?.message}</sup>}
-                        {/* {errors.donateInput && errors.donateInput.type === "required" && <p>Error 1</p>}
-                        {errors.donateInput && errors.donateInput.type === "maxLength" && <p>Error 2</p>}
-                        {errors.donateInput && errors.donateInput.type === "valueAsNumber" && <p>Error 3</p>}
-                        {errors.donateInput && errors.donateInput.type === "validate" && <p>Error 4</p>} */}
+                        <div className="donate-form__input">
+                            <input className={`${errors.donateInput? 'error' : ''}`}
+                                {...register("donateInput", {
+                                    required: {
+                                        value: true, 
+                                        message: 'Поле не може бути пустим'
+                                    },
+                                    maxLength: {
+                                        value: 10,
+                                        message: 'Максимальна кількість символів 10'
+                                    },
+                                    pattern: {
+                                        value: /^[1-9][0-9]*$/,
+                                        message: "Введені данні повинні бути цілим числом"
+                                    },
+                                    validate: value => value >= 1 || 'Сума повинна бути більше 1'
+                                })} 
+                                name = "donateInput"
+                                type = "text"
+                                placeholder="Запропонуйте іншу суму" 
+                                id="donate-input"
+                            />
+                            {errors?.donateInput && <sup>{errors?.donateInput?.message}</sup>}
+                        </div>
                         <button className="btn-credit-card" type="submit" 
                         disabled={!isValid}
                         >

@@ -4,6 +4,7 @@ import HowYouCanHelp from './HowYouCanHelp';
 import BankTransfer from './BankTransfer';
 import Support from './Support';
 import SomeStats from './SomeStats';
+import SuccesStories from './SuccesStoies';
 function Landing() {
     return (
         <div>
@@ -13,6 +14,7 @@ function Landing() {
             <BankTransfer />
             <Support />
             <SomeStats />
+            <SuccesStories />
         </div>
     );
 }
