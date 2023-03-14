@@ -1,5 +1,5 @@
 import StoryCard from "./StoryCard";
-//import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Data from './data.json';
 
 function SuccesStories() {
@@ -19,14 +19,14 @@ function SuccesStories() {
                     } else return null;
                 })}
             </div>
-            {/* <div className="allCurrentNeeds">
-            <Link to="/current">
-                <button className="btnAllNeeds">
-                    <span>Всі поточні потреби</span>
-                    <img src="../img/arrow_h.svg" alt="arrow_h"/>
-                </button>
-            </Link>
-            </div> */}
+            <div className="allSuccesStory">
+                <Link to="/success_stories">
+                    <button className="btnAllStory">
+                        <span>Всі успішні історії</span>
+                        <img src="../img/arrow_h.svg" alt="arrow_h"/>
+                    </button>
+                </Link>
+            </div>
         </div>
     )
 }

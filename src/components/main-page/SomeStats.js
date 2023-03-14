@@ -8,7 +8,7 @@ function SomeStats() {
                 <img src="../img/stats.png" alt="stats" />
             </div>
             <div className="all-stats">
-            <Link to="/stats">
+            <Link to="/docs">
                 <button className="btnAllStats">
                     <span>Всі звіти</span>
                     <img src="../img/arrow_h.svg" alt="arrow_h"/>

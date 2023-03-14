@@ -1951,6 +1951,9 @@ button#count3 {
   color: #000000;
   background: #FFD966;
 }
+.footer .footer__info button:hover {
+  background-color: #FFE9A8;
+}
 .footer .footer__contacts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1996,12 +1999,22 @@ button#count3 {
   display: flex;
 }
 .footer .footer__contacts .social-media button {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 48px;
   height: 48px;
+  margin-right: 5px;
+  border-radius: 50%;
 }
-.footer .footer__contacts .social-media button img {
-  margin: auto;
+.footer .footer__contacts .social-media button:not(:active):hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .subhead-info {
@@ -2437,6 +2450,7 @@ button#count3 {
   max-width: 1240px;
   max-height: 591px;
   margin-bottom: 64px;
+  background: #ECECEC;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2445,11 +2459,17 @@ button#count3 {
 }
 .succes-stories_main .stories-content .story-card {
   width: 392px;
-  max-height: 591px;
-  background: white;
+  height: 591px;
+  background: #ECECEC;
   cursor: pointer;
 }
+.succes-stories_main .stories-content .story-card:hover {
+  background-color: white;
+}
 .succes-stories_main .stories-content .story-card .story-card__content {
+  position: relative;
+  width: 392px;
+  height: 591px;
   background: #ECECEC;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -2474,6 +2494,10 @@ button#count3 {
 }
 .succes-stories_main .stories-content .story-card .story-card__content p:not(:last-child) {
   margin-bottom: 12px;
+}
+.succes-stories_main .stories-content .story-card .story-card__content p:last-child {
+  position: absolute;
+  bottom: 0;
 }
 .succes-stories_main .stories-content .story-card .story-card__content .story-card__slider {
   width: 392px;
@@ -2564,5 +2588,34 @@ button#count3 {
   background-color: #FFE9A8;
 }
 .succes-stories_main .stories-content .story-card .story-card__content .story-card__slider .btnPrev:not(:active):hover {
+  background-color: rgba(31, 30, 27, 0.1);
+}
+.succes-stories_main .allSuccesStory {
+  position: relative;
+  margin-top: 64px;
+  height: 60px;
+  padding-bottom: 100px;
+}
+.succes-stories_main .btnAllStory {
+  position: absolute;
+  right: 0%;
+  width: 296px;
+  height: 60px;
+  border: 1px solid #000000;
+  border-radius: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.succes-stories_main .btnAllStory img {
+  padding-left: 0.5555555556vw;
+}
+.succes-stories_main .btnAllStory:hover {
   background-color: rgba(31, 30, 27, 0.1);
 }

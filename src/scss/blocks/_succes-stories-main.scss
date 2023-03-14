@@ -25,14 +25,21 @@
         max-width: 1240px;
         max-height: 591px;  
         margin-bottom: 64px;
+        background:#ECECEC;
         display: flex;
         justify-content: space-around;
         .story-card {
             width: 392px;
-            max-height: 591px;
-            background: white;
+            height: 591px;
+            background:#ECECEC;
             cursor: pointer;
+            &:hover {
+                background-color: white;
+            }
             .story-card__content {
+                position: relative;
+                width: 392px;
+                height: 591px;
                 background: #ECECEC;
                 font-family: 'Montserrat', sans-serif;
                 font-style: normal; 
@@ -55,6 +62,10 @@
                 }
                 p:not(:last-child) {
                     margin-bottom: 12px;
+                }
+                p:last-child {
+                    position: absolute;
+                    bottom: 0;
                 }
                 .story-card__slider {
                     width: 392px;
@@ -131,5 +142,28 @@
                 }
             }
         }  
+    }
+    .allSuccesStory {
+        position: relative;
+        margin-top: 64px;
+        height: 60px;
+        padding-bottom: 100px;
+    }
+    .btnAllStory {
+        position: absolute;
+        right: 0%;
+        width: 296px;
+        height: 60px;
+        border: 1px solid #000000;
+        border-radius: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            padding-left: calc(8 / 1440) * 100vw;
+        }
+        &:hover {
+            background-color: rgba(31, 30, 27, 0.1);
+        }
     }
 }

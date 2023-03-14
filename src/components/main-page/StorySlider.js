@@ -15,7 +15,7 @@ function StorySlider({src}) {
                 <StorySliderNextBtn />
                 <StorySliderPrevBtn />
                 {
-                    src.forEach((value, index) => {
+                    src.map((value, index) => {
                         return <SwiperSlide key={index}><img src={value} alt="slide" /></SwiperSlide>
                     })
                 }
