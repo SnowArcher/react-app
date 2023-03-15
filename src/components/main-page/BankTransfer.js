@@ -20,7 +20,6 @@ function BankTransfer() {
     Data["bank"].usd.map((value) => {
         return (usdText += value.key + ' : ' + value.content + '; \n');
     })
-    console.log(eurText);
     return (
         <div className="bank-transfer">
             <div className="bank-transfer__line">

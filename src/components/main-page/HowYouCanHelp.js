@@ -26,6 +26,10 @@ function HowYouCanHelp() {
         mode: "onBlur"
     });
     const onSubmit = data => {
+        let elements = document.getElementsByClassName("count__button");
+        for (let element of elements) {
+            element.classList.remove("active"); 
+        }
         alert(JSON.stringify(data));
         reset();
     }
@@ -59,6 +63,8 @@ function HowYouCanHelp() {
                         <button className={`count__button ${errors?.donateInput?.type === "required"? "error" : ""}`} id="count1" onClick={() => {
                                 changeCountButton('count1');
                                 setValue("donateInput", `${uah? 100 : 50}`);
+                                document.getElementById("donate-input").focus();
+                                errors.donateInput = false;
                             }}>
                             <img src="../img/rate_arrow.svg" alt="arrow"/>
                             <span>{uah? 100 : 50}</span>
@@ -66,6 +72,8 @@ function HowYouCanHelp() {
                         <button className={`count__button ${errors?.donateInput?.type === "required"? "error" : ""}`} id="count2" onClick={() => {
                                 changeCountButton('count2');
                                 setValue("donateInput", `${uah? 200 : 100}`);
+                                document.getElementById("donate-input").focus();
+                                errors.donateInput = false;
                             }}>
                             <img src="../img/rate_arrow.svg" alt="arrow"/>
                             <span>{uah? 200 : 100}</span>
@@ -73,6 +81,8 @@ function HowYouCanHelp() {
                         <button className={`count__button ${errors?.donateInput?.type === "required"? "error" : ""}`} id="count3" onClick={() => {
                                 changeCountButton('count3');
                                 setValue("donateInput", `${uah? 500 : 200}`);
+                                document.getElementById("donate-input").focus();
+                                errors.donateInput = false;
                             }}>
                             <img src="../img/rate_arrow.svg" alt="arrow"/>
                             <span>{uah? 500 : 200}</span>
