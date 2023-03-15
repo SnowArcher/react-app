@@ -12,8 +12,6 @@ import Breadcrumbs from './components/main-page/Breadcrumbs';
 import Stories from './components/projects/success-stories/Stories';
 import ScrollToTop from './components/ScrollToTop';
 
-
-
 function App() {
   return (
     <BrowserRouter>

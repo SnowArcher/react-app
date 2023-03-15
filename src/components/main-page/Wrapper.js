@@ -22,11 +22,11 @@ function Wrapper() {
                 }}
                 modules={[EffectCreative]}
             >
-                <SwiperSlide><img src="../img/header-slider/1.png" alt="sl" /></SwiperSlide>
-                <SwiperSlide><img src="../img/header-slider/2.png" alt="sl" /></SwiperSlide>
-                <SwiperSlide><img src="../img/header-slider/3.png" alt="sl" /></SwiperSlide>
-                <SwiperSlide><img src="../img/header-slider/4.png" alt="sl" /></SwiperSlide>
-                <SwiperSlide><img src="../img/header-slider/5.png" alt="sl" /></SwiperSlide>
+                <SwiperSlide><img src="../img/header-slider/1.png" alt="slide 1" /></SwiperSlide>
+                <SwiperSlide><img src="../img/header-slider/2.png" alt="slide 2" /></SwiperSlide>
+                <SwiperSlide><img src="../img/header-slider/3.png" alt="slide 3" /></SwiperSlide>
+                <SwiperSlide><img src="../img/header-slider/4.png" alt="slide 4" /></SwiperSlide>
+                <SwiperSlide><img src="../img/header-slider/5.png" alt="slide 5" /></SwiperSlide>
                 <SlideNextButton />
             </Swiper>       
         </div>

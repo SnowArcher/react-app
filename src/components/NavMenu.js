@@ -41,30 +41,30 @@ function NavMenu () {
                 <ul className="menu-links" ref={menuRef}>
                     <li>
                         <div className="link" onClick={()=>{setOpen1(!open1)}}>
-                            <span>Про нас</span>
+                            <span>{eng? 'About fund':'Про нас'}</span>
                             <img className={`menu-arrow ${open1? 'active' : 'inactive'}`} src="../img/arrow.svg" alt="arrow"/>
                         </div>
                         <div className={`dropdown ${open1? 'active' : 'inactive'}`}>
                             <ul onClick={()=>{setOpen1(!open1)}}>
-                                <li><Link className="ref" to="/story"><span>Ціль та історія фонду</span></Link></li>
-                                <li><Link className="ref" to="/team"><span>Команда та партнери</span></Link></li>
-                                <li><Link className="ref" to="/docs"><span>Документація та звітність</span></Link></li>
+                                <li><Link className="ref" to="/story"><span>{eng? 'Mission & Story':'Ціль та історія фонду'}</span></Link></li>
+                                <li><Link className="ref" to="/team"><span>{eng? 'Team & Partners':'Команда та партнери'}</span></Link></li>
+                                <li><Link className="ref" to="/docs"><span>{eng? 'Docs & Reports':'Документація та звітність'}</span></Link></li>
                             </ul>
                         </div>
                     </li>
                     <li>
                         <div className="link" onClick={()=>{setOpen2(!open2)}}>
-                            <span>Проєкти</span>
+                            <span>{eng? 'Projects': 'Проєкти'}</span>
                             <img className={`menu-arrow ${open2? 'active' : 'inactive'}`} src="../img/arrow.svg" alt="arrow"/>
                         </div>
                         <div className={`dropdown ${open2? 'active' : 'inactive'}`}>
                             <ul onClick={()=>{setOpen2(!open2)}}>
-                                <li><Link className="ref" to="/current"><span>Поточні потреби</span></Link></li>
-                                <li><Link className="ref" to="/success_stories"><span>Успішні історії</span></Link></li>
+                                <li><Link className="ref" to="/current"><span>{eng? 'Current':'Поточні потреби'}</span></Link></li>
+                                <li><Link className="ref" to="/success_stories"><span>{eng? 'Previous':'Успішні історії'}</span></Link></li>
                             </ul>
                         </div>
                     </li>
-                    <li><Link className="ref" to="/contacts">Контакти</Link></li>
+                    <li><Link className="ref" to="/contacts">{eng? 'Contacts': 'Контакти'}</Link></li>
                     <li>
                         <div className="link" onClick={()=>{setOpen3(!open3)}}>
                             <span>{`${eng? 'ENG':'УКР'}`}</span>
@@ -75,12 +75,12 @@ function NavMenu () {
                                 <li onClick={()=>{if(eng === false) {setEng(!eng); setUa(!ua)}}} className={`lang ${eng? 'active' : ''}`}>
                                     <Link className="ref" to="/">
                                         <img src="../img/rate_arrow.svg" alt="arrow"/>
-                                        <span>English</span>
+                                        <span>{eng? 'English':'Англійська'}</span>
                                     </Link></li>
                                 <li onClick={()=>{if(ua === false) {setEng(!eng); setUa(!ua)}}}className={`lang ${ua? 'active' : ''}`}>
                                     <Link className="ref" to="/">
                                         <img src="../img/rate_arrow.svg" alt="arrow"/>
-                                        <span>Українська</span>
+                                        <span>{eng? 'Ukranian':'Українська'}</span>
                                     </Link>
                                 </li>
                             </ul>
@@ -88,7 +88,7 @@ function NavMenu () {
                     </li>
                     <li>
                         <HashLink to="/#donate" className="ref" >
-                            <span>Допомогти</span>
+                            <span>{eng? 'Donate':'Допомогти'}</span>
                         </HashLink>
                     </li>
                 </ul>

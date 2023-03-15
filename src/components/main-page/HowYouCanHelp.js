@@ -64,7 +64,9 @@ function HowYouCanHelp() {
                                 changeCountButton('count1');
                                 setValue("donateInput", `${uah? 100 : 50}`);
                                 document.getElementById("donate-input").focus();
-                                errors.donateInput = false;
+                                document.getElementById("donate-input").classList.remove('error');
+                                document.getElementById("donateSup").innerHTML = '';
+                                
                             }}>
                             <img src="../img/rate_arrow.svg" alt="arrow"/>
                             <span>{uah? 100 : 50}</span>
@@ -73,7 +75,8 @@ function HowYouCanHelp() {
                                 changeCountButton('count2');
                                 setValue("donateInput", `${uah? 200 : 100}`);
                                 document.getElementById("donate-input").focus();
-                                errors.donateInput = false;
+                                document.getElementById("donate-input").classList.remove('error');
+                                document.getElementById("donateSup").innerHTML = '';
                             }}>
                             <img src="../img/rate_arrow.svg" alt="arrow"/>
                             <span>{uah? 200 : 100}</span>
@@ -82,7 +85,8 @@ function HowYouCanHelp() {
                                 changeCountButton('count3');
                                 setValue("donateInput", `${uah? 500 : 200}`);
                                 document.getElementById("donate-input").focus();
-                                errors.donateInput = false;
+                                document.getElementById("donate-input").classList.remove('error');
+                                document.getElementById("donateSup").innerHTML = '';
                             }}>
                             <img src="../img/rate_arrow.svg" alt="arrow"/>
                             <span>{uah? 500 : 200}</span>
@@ -111,7 +115,7 @@ function HowYouCanHelp() {
                                 placeholder="Запропонуйте іншу суму" 
                                 id="donate-input"
                             />
-                            {errors?.donateInput && <sup>{errors?.donateInput?.message}</sup>}
+                            {errors?.donateInput && <sup id='donateSup'>{errors?.donateInput?.message}</sup>}
                         </div>
                         <button className="btn-credit-card" type="submit" 
                         disabled={!isValid}

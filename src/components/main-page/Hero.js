@@ -1,4 +1,5 @@
 import Wrapper from './Wrapper';
+
 function Hero() {
     return (
         <header className="hero">
